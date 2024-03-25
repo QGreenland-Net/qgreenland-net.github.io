@@ -2,9 +2,11 @@
 title: "Standard format for decision records"
 number: "0"
 date: "TBD"
-authors:
-  - {{<var people.matt-fisher >}}
-  - {{<var people.trey >}}
+author:
+  - name: "{{< var people.matt-fisher.name >}}"
+    orcid: "{{< var people.matt-fisher.orcid >}}"
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
 status: "Pending"
 ---
 
@@ -82,5 +84,5 @@ _Quotations above are credited to [Michael Nygard. Documenting Architecture Deci
 
 ## Consent
 
-- {{<var people.matt-fisher.name >}}
-- {{<var people.trey.name >}}
+- {{< var people.matt-fisher.name >}}
+- {{< var people.trey.name >}}

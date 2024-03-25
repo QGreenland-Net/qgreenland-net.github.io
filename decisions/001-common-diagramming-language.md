@@ -2,10 +2,12 @@
 title: "A common language for diagramming"
 number: 1
 date: "TBD"
-authors:
-  - {{<var people.matt-fisher >}}
-  - {{<var people.trey >}}
-  - {{<var people.rushiraj >}}
+author:
+  - name: "{{< var people.matt-fisher.name >}}"
+    orcid: "{{< var people.matt-fisher.orcid >}}"
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
+  - name: "{{< var people.rushiraj.name >}}"
 status: "Pending"
 ---
 
@@ -37,6 +39,6 @@ We may still use another tool for live diagramming, e.g. Excalidraw.
 
 ## Consent
 
-* {{<var people.rushiraj.name >}}
-* {{<var people.trey.name >}}
-* {{<var people.matt-fisher.name >}}
+* {{< var people.rushiraj.name >}}
+* {{< var people.trey.name >}}
+* {{< var people.matt-fisher.name >}}
