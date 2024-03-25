@@ -83,4 +83,4 @@ _Quotations above are credited to [Michael Nygard. Documenting Architecture Deci
 ## Consent
 
 - {{<var people.matt-fisher.name >}}
-- ...?
+- {{<var people.trey.name >}}
