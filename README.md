@@ -7,4 +7,6 @@ collaborative work. Technical decisions, notes, architecture diagrams, and other
 information shared between the QGreenland team and ADC will be maintained in
 this space.
 
-This repository uses [Quarto](https://quarto.org/docs/websites) to create a website.
+This repository uses [Quarto](https://quarto.org/docs/websites) to create a
+website that is deployed via GitHub Actions:
+[https://qgreenland-net.github.io/](https://qgreenland-net.github.io/).
