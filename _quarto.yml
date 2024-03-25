@@ -1,6 +1,7 @@
 project:
   type: "website"
 
+
 website:
   title: "QGreenland-Net"
   site-url: "https://qgreenland-net.github.io"
@@ -10,8 +11,6 @@ website:
 
   navbar:
     left:
-      - text: "Home"
-        href: "index.md"
       - text: "Decision records"
         href: "decisions/index.md"
       - text: "Notes"
@@ -25,8 +24,14 @@ website:
         href: *repo-url
 
 
+  page-footer:
+    left: "© NSIDC and ADC 2024"
+    right: "Built with [Quarto](https://quarto.org/) ❤️"
+
+
 format:
   html:
-    theme: "cosmo"
-    css: "styles.css"
+    theme:
+      light: ["flatly", "styles.css"]
+      dark: ["darkly", "styles.css"]
     toc: true
