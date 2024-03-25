@@ -1,0 +1,9 @@
+# Quarto ephemera
+/.quarto/
+/_site/
+/site_libs/
+*.local
+*.html
+*.json
+!package.json
+!package-lock.json
