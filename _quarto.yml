@@ -11,6 +11,8 @@ website:
         href: "decisions/index.md"
       - text: "Notes"
         href: "notes/index.md"
+      - text: "Diagrams"
+        href: "diagrams/index.md"
 
 format:
   html:
