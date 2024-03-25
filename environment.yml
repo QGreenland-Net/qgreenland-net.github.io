@@ -1,0 +1,7 @@
+name: qgreenland-net.github.io
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python ~=3.10
+  - quarto
