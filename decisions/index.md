@@ -7,10 +7,12 @@ listing:
     - "number"
     - "title"
     - "date"
-    - "author"
     - "status"
   sort:
     - "number desc"
+  field-display-names:
+    number: "Number"
+    status: "Status"
 ---
 
 

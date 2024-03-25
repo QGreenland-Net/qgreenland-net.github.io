@@ -1,6 +1,6 @@
 ---
 title: "Standard format for decision records"
-number: 0
+number: "0"
 date: "TBD"
 authors:
   - {{<var people.matt-fisher >}}
