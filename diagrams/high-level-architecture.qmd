@@ -17,4 +17,5 @@ flowchart TD
     RECIPE[GitHub: harmonization recipe] --> OGDC
     DATA_STORE --> QGR[QGreenland Data Package]
     DATA_STORE --> OTHER[Independent users/researchers/GIS client]
+    style adc fill:#FFFFFF;
 ```
