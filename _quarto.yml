@@ -9,6 +9,8 @@ website:
         href: "index.md"
       - text: "Decision records"
         href: "decisions/index.md"
+      - text: "Notes"
+        href: "notes/index.md"
 
 format:
   html:
