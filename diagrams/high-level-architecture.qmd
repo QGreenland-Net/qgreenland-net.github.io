@@ -1,0 +1,28 @@
+---
+title: "High-level architecture diagram"
+date: "2024-03-25"
+---
+
+```{mermaid}
+flowchart TD
+  ADC[ADC/DataONE]
+  OGDC[OGDC </br>*Fetch data</br>*Extract var</br>*Reproject</br>*Subset</br>*Write to standard geodata format]
+  TILE_SERVICE[ADC Tile service]
+  DATA_STORE[(Transformed data</br> + provenance/metadata)]
+  WEB_PORTAL[ADC QGreenland Data Portal]
+  RECIPE[GitHub: harmonization recipe]
+  QGR[QGreenland Data Package]
+  OTHER_CONSUMERS[Independent users/researchers/GIS client]
+
+  subgraph ADC_SYSTEM[Arctic Data Center]
+    ADC -->|Archived data and metadata| OGDC
+    OGDC --> DATA_STORE
+    DATA_STORE --> TILE_SERVICE
+    TILE_SERVICE --> WEB_PORTAL
+  end
+  RECIPE --> OGDC
+  DATA_STORE --> QGR
+  DATA_STORE --> OTHER_CONSUMERS
+
+  style ADC_SYSTEM fill:#FFFFFF;
+```
