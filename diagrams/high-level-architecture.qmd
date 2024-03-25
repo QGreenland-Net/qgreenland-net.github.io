@@ -8,19 +8,24 @@ date: "2024-03-25"
 
 ```{mermaid}
 flowchart TD
-  subgraph ADC_SYSTEM[Arctic Data Center]
-    ADC -->|Archived data and metadata| OGDC
-    OGDC --> DATA_STORE[(Transformed data</br> + provenance/metadata)]
-    DATA_STORE --> TILE_SERVICE[ADC Tile service]
-    TILE_SERVICE --> WEB_PORTAL[ADC QGreenland Data Portal]
-  end
-
-  RECIPE[GitHub: harmonization recipe] --> OGDC
-  DATA_STORE --> QGR[QGreenland Data Package]
-  DATA_STORE --> OTHER[Independent users/researchers/GIS client]
-
+  RECIPE --> OGDC
+  DATA_STORE --> QGR
+  DATA_STORE --> OTHER_CONSUMERS
   ADC[ADC/DataONE]
   OGDC[OGDC </br>*Fetch data</br>*Extract var</br>*Reproject</br>*Subset</br>*Write to standard geodata format]
+  DATA_STORE[(Transformed data</br> + provenance/metadata)]
+  TILE_SERVICE[ADC Tile service]
+  WEB_PORTAL[ADC QGreenland Data Portal]
+  RECIPE[GitHub: harmonization recipe]
+  QGR[QGreenland Data Package]
+  OTHER_CONSUMERS[Independent users/researchers/GIS client]
+
+  subgraph ADC_SYSTEM[Arctic Data Center]
+    ADC -->|Archived data and metadata| OGDC
+    OGDC --> DATA_STORE
+    DATA_STORE --> TILE_SERVICE
+    TILE_SERVICE --> WEB_PORTAL
+  end
 
   style ADC_SYSTEM fill:#FFFFFF;
 ```
