@@ -3,9 +3,6 @@ name: "Publish website with GH Pages"
 on:
   push:
     branches: ["main"]
-  workflow_run:
-    branches: ["main"]
-    types: ["completed"]
   workflow_dispatch:
 
 
