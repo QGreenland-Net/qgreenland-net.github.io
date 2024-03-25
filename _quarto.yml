@@ -1,19 +1,19 @@
 project:
-  type: website
+  type: "website"
 
 website:
   title: "QGreenland-Net"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: "index.md"
+      - text: "Decision records"
+        href: "decisions/index.md"
+      - text: "Notes"
+        href: "notes/index.md"
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: "cosmo"
+    css: "styles.css"
     toc: true
-
-
-
