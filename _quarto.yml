@@ -3,6 +3,11 @@ project:
 
 website:
   title: "QGreenland-Net"
+  site-url: "https://qgreenland-net.github.io"
+  repo-url: &repo-url "https://github.com/qgreenland-net/qgreenland-net.github.io"
+  repo-actions: ["edit", "issue"]
+
+
   navbar:
     left:
       - text: "Home"
@@ -13,6 +18,12 @@ website:
         href: "notes/index.md"
       - text: "Diagrams"
         href: "diagrams/index.md"
+
+    right:
+      - icon: "github"
+        aria-label: "GitHub"
+        href: *repo-url
+
 
 format:
   html:
