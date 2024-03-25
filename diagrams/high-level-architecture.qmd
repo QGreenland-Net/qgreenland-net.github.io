@@ -3,18 +3,12 @@ title: "High-level architecture diagram"
 date: "2024-03-25"
 ---
 
-* Separate structure from detail? E.g., can the list of OGDC steps be separately defined?
-
-
 ```{mermaid}
 flowchart TD
-  RECIPE --> OGDC
-  DATA_STORE --> QGR
-  DATA_STORE --> OTHER_CONSUMERS
   ADC[ADC/DataONE]
   OGDC[OGDC </br>*Fetch data</br>*Extract var</br>*Reproject</br>*Subset</br>*Write to standard geodata format]
-  DATA_STORE[(Transformed data</br> + provenance/metadata)]
   TILE_SERVICE[ADC Tile service]
+  DATA_STORE[(Transformed data</br> + provenance/metadata)]
   WEB_PORTAL[ADC QGreenland Data Portal]
   RECIPE[GitHub: harmonization recipe]
   QGR[QGreenland Data Package]
@@ -26,6 +20,9 @@ flowchart TD
     DATA_STORE --> TILE_SERVICE
     TILE_SERVICE --> WEB_PORTAL
   end
+  RECIPE --> OGDC
+  DATA_STORE --> QGR
+  DATA_STORE --> OTHER_CONSUMERS
 
   style ADC_SYSTEM fill:#FFFFFF;
 ```
