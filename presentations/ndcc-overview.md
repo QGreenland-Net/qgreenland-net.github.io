@@ -18,12 +18,29 @@ author: "Trey Stafford"
 * Trey represented the QGreenland-Net project
 
 ::: {.notes}
-Workshop focused on defining a vision for the NSF's activities supporting the creation of a more integrated cloud-based system for climate science
+Workshop focused on defining a vision for the NSF's activities supporting the
+creation of a more integrated cloud-based system for climate science
 
-"The National Science Foundation (NSF) initiated the development of a National Discovery Cloud for Climate (NDC-C) to “federate advanced compute, data, software, and networking resources, democratizing access to a cyberinfrastructure ecosystem that is increasingly necessary to further climate-related science and engineering”. The NDC-C builds on many existing efforts supported by the CISE and GEO directorates across the entire science vertical from hardware to foundational infrastructure to software services to core climate research to community activities." - https://www.nationaldiscoverycloud.org/home
+"The National Science Foundation (NSF) initiated the development of a National
+Discovery Cloud for Climate (NDC-C) to “federate advanced compute, data,
+software, and networking resources, democratizing access to a
+cyberinfrastructure ecosystem that is increasingly necessary to further
+climate-related science and engineering”. The NDC-C builds on many existing
+efforts supported by the CISE and GEO directorates across the entire science
+vertical from hardware to foundational infrastructure to software services to
+core climate research to community activities." -
+https://www.nationaldiscoverycloud.org/home
 
 CISE == Directorate for Computer and Information Science and Engineering
 GEO == Geosciences Directorate
+
+There were ~30 projects represented, ranging from infrastructure work (e.g., new
+HPC resources) to research projects focused on answering earth-science questions
+using cloud-computing resources (e.g., permafrost landscape analysis in the
+Arctic). Discussions ranged from "grandiose" visions of a cloud-based
+computational environment that users interact with through AI natural-language
+interfaces to what we can do as a disparate group of individually-funded
+projects in the next 6-12 months.
 :::
 
 
