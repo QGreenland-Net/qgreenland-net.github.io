@@ -10,7 +10,7 @@ author: "Trey Stafford"
 ## Workshop overview
 
 * San Diego, CA March 6-7, 2024
-* Focus on defining NSF vision for cloud-based climate science
+* Focus on defining NSF vision for accessible, cloud-based climate science
 * Similarities to [National Artificial Intelligence Research Resource Pilot
   (NAIRR)](https://new.nsf.gov/focus-areas/artificial-intelligence/nairr)
 * ~30 projects represented
@@ -19,6 +19,11 @@ author: "Trey Stafford"
 
 ::: {.notes}
 Workshop focused on defining a vision for the NSF's activities supporting the creation of a more integrated cloud-based system for climate science
+
+"The National Science Foundation (NSF) initiated the development of a National Discovery Cloud for Climate (NDC-C) to “federate advanced compute, data, software, and networking resources, democratizing access to a cyberinfrastructure ecosystem that is increasingly necessary to further climate-related science and engineering”. The NDC-C builds on many existing efforts supported by the CISE and GEO directorates across the entire science vertical from hardware to foundational infrastructure to software services to core climate research to community activities." - https://www.nationaldiscoverycloud.org/home
+
+CISE == Directorate for Computer and Information Science and Engineering
+GEO == Geosciences Directorate
 :::
 
 
