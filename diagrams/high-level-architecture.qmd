@@ -6,9 +6,10 @@ date: "2024-03-25"
 ```{mermaid}
 flowchart TD
   ADC[ADC/DataONE]
-  OGDC[OGDC </br>*Fetch data</br>*Extract var</br>*Reproject</br>*Subset</br>*Write to standard geodata format]
+  OGDC[OGDC <br/>*Fetch data<br/>*Extract var<br/>*Reproject<br/>*Subset<br/>*Write to standard geodata format]
   TILE_SERVICE[ADC Tile service]
-  DATA_STORE[(Transformed data</br> + provenance/metadata)]
+  DATA_STORE[(ADC DataONE member node:<br/> Transformed data<br/> + metadata)]
+  COORDINATING_NODE[DataONE Coordinating Node]
   WEB_PORTAL[ADC QGreenland Data Portal]
   RECIPE[GitHub: harmonization recipe]
   QGR[QGreenland Data Package]
@@ -16,13 +17,16 @@ flowchart TD
 
   subgraph ADC_SYSTEM[Arctic Data Center]
     ADC -->|Archived data and metadata| OGDC
-    OGDC --> DATA_STORE
-    DATA_STORE --> TILE_SERVICE
-    TILE_SERVICE --> WEB_PORTAL
+    OGDC -->|Upload TBD| DATA_STORE
+    DATA_STORE -->|HTTP GET| TILE_SERVICE
+    TILE_SERVICE -->|HTTP GET| WEB_PORTAL
   end
-  RECIPE --> OGDC
-  DATA_STORE --> QGR
+  RECIPE -->|git clone| OGDC
+  DATA_STORE -->|HTTP GET| QGR
   DATA_STORE --> OTHER_CONSUMERS
+  COORDINATING_NODE <-->|Sync TBD| DATA_STORE
 
   style ADC_SYSTEM fill:#FFFFFF;
 ```
+
+* Metadata: provenance plus enriched source metadata
