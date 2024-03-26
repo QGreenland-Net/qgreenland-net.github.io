@@ -17,6 +17,8 @@ website:
         href: "notes/index.md"
       - text: "Diagrams"
         href: "diagrams/index.md"
+      - text: "Presentations"
+        href: "presentations/index.md"
 
     right:
       - icon: "github"
