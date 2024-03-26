@@ -43,13 +43,17 @@ date: "2024-03-26"
               “Hello world” on test cluster?
                 * TODO: Matthew Fisher Trey Stafford give rushirajnenuji@gmail.com our IP
                   addresses for allowlist.
+                  (<https://github.com/QGreenland-Net/.github/issues/6>)
                 * TODO: rushirajnenuji@gmail.com to check if he has access to `k8s-dev`
-                * TODO: create new qgnet service account and namespace, see
+                  (<https://github.com/QGreenland-Net/.github/issues/7>)
+                * TODO: create new `qgnet` service account and namespace, see
                   https://github.com/DataONEorg/k8s-cluster/tree/main/authorization
+                  (same issue as above)
                 * There is some documentation on GH that can help getting started
                   (<https://github.com/dataoneorg/k8s-cluster>)
                 * Next step: Group programming session to get connected and do “Hello
                   world” on dev cluster.
+                  (<https://github.com/QGreenland-Net/.github/issues/8>)
     * ADC getting better at Helm, which has improved DX over straight K8s YAML. Matt
       Brooke is the go-to person for Helm Charts.
     * Also working on a project with Google, and they have $alot in cloud credits.
@@ -78,6 +82,7 @@ date: "2024-03-26"
     * https://source.coop/
     * Matt F. works on Openscapes with Carl
     * TODO: Matthew Fisher ask Carl and learn more!
+      (<https://github.com/QGreenland-Net/.github/issues/9>)
 
 
 ### Data-chunking communities of practice
