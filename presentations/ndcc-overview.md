@@ -66,8 +66,14 @@ This image of a slide was created for the workshop. The
 :::
 
 
+#
+
+![](../_images/ndcc-workshop-collage.jpg){fig-align="center"}
+
+
 # Resources
 
 * [NDC-C NSF website](https://new.nsf.gov/cise/national-discovery-cloud-climate)
 * [NDC-C workshop website](https://www.nationaldiscoverycloud.org/home)
 * [QGreenland-Net info/planning website](https://qgreenland-net.github.io/)
+* [More photos from Trey's trip](https://photos.app.goo.gl/gvmBJu3agig49BtAA)
