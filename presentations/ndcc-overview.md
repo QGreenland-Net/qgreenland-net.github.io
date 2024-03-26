@@ -2,8 +2,9 @@
 title: "National Discovery Cloud for Climate workshop overview"
 date: "2024-03-26"
 format: revealjs
-
-author: "Trey Stafford"
+author:
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
 ---
 
 
