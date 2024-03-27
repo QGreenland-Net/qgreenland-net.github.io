@@ -19,6 +19,9 @@ date: "2024-03-26"
 * How will NSIDC devs test/initiate deployments of services? Will NSIDC have access to
   ADC infrastructure for developing &amp; testing code? Will we support first-class local
   deployments so I can e.g. run the stack on my laptop?
+    * (Matt J) "Generally I have found that a lot of things run fine on my mac using
+      Racher Desktop as the kubernetes implementation."
+      [More](https://github.com/QGreenland-Net/qgreenland-net.github.io/pull/18#discussion_r1540236394)
 * How stable is the current way? Are we going to be innovating on deployment, e.g. will
   we be helping with developing cloud/k8s deployments for this project?
     * (Rushiraj) PDG is not using k8s yet, but there are plans for it.
