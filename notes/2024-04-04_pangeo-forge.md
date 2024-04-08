@@ -89,9 +89,39 @@ using PF, and all have their own use cases and infra. Needs.
 
 ### Questions / needs from QGreenland-Net
 
-:::{.callout-important}
-_TODO: Finish!_
-:::
+* Our use case feels “off the beaten path”; if we contribute to the pangeo-forge ecosystem
+  to help add support for our use case (uploading non-Zarr data file outputs to a public
+  archive).
+    * In the Pangeo Forge paper, it was explicitly called out that PF is providing views in to
+      the original source of truth data and not acting as an archive, but our processing needs
+      would be more about creating derived datasets that can meet the wide variety of common
+      needs users have for geospatial datasets. For example, a dataset with low quality
+      metadata or data errors must be “cleansed” by researchers individually, as there’s no
+      easy way to share the derived dataset. We imagine a future where Pangeo Forge recipes
+      programmatically create derived datasets with generated provenance metadata that allows
+      derived datasets to link all the way up the chain to the original source of truth.
+* Is it a main goal to improve the vanilla-Beam-ness of recipes? Can we help with that?
+  How?
+    * We are new Beam users, but are learning quickly!
+      Aimee: Open to feedback for how to do this! Open issues on pangeo-forge-recipes
+      Pangeo-forge-runner may be going away
+* We have ideas for new re-usable transforms that we’d like to see in
+  pangeo-forge-recipes. Should we contribute to that or create a new library which
+  provides those recipes optionally?
+    * Geospatial-specialized PTransforms
+    * Generic subprocess-calling PTransform
+    * E.g. https://pangeo-forge.readthedocs.io/en/latest/ecosystem.html 
+* QGreenland-Net is funding Matt to work on Openscapes. How can we take advantage of
+  Openscapes specialization in cross-DAAC collaboration to help understand and meet
+  NASA/DAAC needs and bring in collaborators to move faster?
+* If we do decide to integrate with PF, Aimee says “yes, we can integrate and can
+  contribute!” Join Pangeo Forge coordination meetings! Might be on a hiatus now, in the
+  air. Next months will be disruptive because the approach is more of a do-ocracy with
+  less centralized governance. 
+* Aimee’s roadmap for governance is a WIP. More work needs to be done to communicate the
+  new vision for PF.
+* Look at Aimee’s cloud optimized formats guide: https://guide.cloudnativegeo.org/ 
+
 
 
 ### What / how QGreenland-Net can contribute upstream
