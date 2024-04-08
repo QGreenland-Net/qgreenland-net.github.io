@@ -6,7 +6,7 @@ date: "2024-04-08"
 
 ## How do we get data from/on DataONE?
 
-* Can use DAtaONE API to read.
+* Can use DataONE API to read.
 * The ([DataONE Investigator's Toolkit (ITK)](https://releases.dataone.org/online/api-documentation-v2.0.1/design/itk-overview.html))
   allows retrieving datasets.
     * Also has tools for publishing, publishing, modifying datasets.
