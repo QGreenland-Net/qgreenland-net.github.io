@@ -70,7 +70,7 @@ We'll answer data management questions in the data management milestone.
 
 ### Complex program to create a simple interface for simple recipes
 
-For example folling the `repo2docker` model, users could specify a `recipe.sh` containing simple GDAL/OGR commands that would get turned in to a real Beam recipe by some program.
+For example following the `repo2docker` model, users could specify a `recipe.sh` containing simple GDAL/OGR commands that would get turned in to a real Beam recipe by some program.
 
 Include documentation on constraints and mechanisms behind the recipe generation.
 
