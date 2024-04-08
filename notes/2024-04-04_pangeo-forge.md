@@ -126,6 +126,15 @@ using PF, and all have their own use cases and infra. Needs.
 
 ### What / how QGreenland-Net can contribute upstream
 
-:::{.callout-important}
-_TODO: Finish!_
-:::
+We have 3 experienced Python developers and experienced Conda users, one experienced
+Conda Forge maintainer, and …
+
+* We can get venvception on Conda Forge to help release v0.10.0 of pangeo-forge-runner
+  there
+* Can ADC act as a Bakery?
+    * Is there a concept of an “output repository” for Pangeo Forge? Can DataONE become an
+      output repository? This relates to the previous questions about the goals of Pangeo
+      Forge.
+    * PF goal to build NASA infrastructure supports this, potential for re-use?
+* Contribution of a feedstock for the Calibrated mass loss projections from the Greenland
+  Ice Sheet dataset (typical nc-to-Zarr dataflow)
