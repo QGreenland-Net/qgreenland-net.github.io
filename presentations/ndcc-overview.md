@@ -97,5 +97,5 @@ This is an image of the QGreenland-Net slide created at the workshop.
 
 * [NDC-C NSF website](https://new.nsf.gov/cise/national-discovery-cloud-climate)
 * [NDC-C workshop website](https://www.nationaldiscoverycloud.org/home)
-* [NDC-C workshop notes](../notes/ndcc-workshop-notes.md)
+* [NDC-C workshop notes](../notes/2024-03-25_ndcc-workshop.md)
 * [More photos from Trey's trip](https://photos.app.goo.gl/gvmBJu3agig49BtAA)

@@ -148,5 +148,5 @@ the future.
 
 * [NDC-C NSF website](https://new.nsf.gov/cise/national-discovery-cloud-climate)
 * [NDC-C workshop website](https://www.nationaldiscoverycloud.org/home)
-* [QGreenland-Net info/planning website](https://qgreenland-net.github.io/)
+* [NDC-C workshop overview slides](../presentations/ndcc-overview.md)
 * [Photos from Trey's trip](https://photos.app.goo.gl/gvmBJu3agig49BtAA)
