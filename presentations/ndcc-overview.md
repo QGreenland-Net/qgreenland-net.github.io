@@ -20,7 +20,10 @@ author:
 
 ::: {.notes}
 Workshop focused on defining a vision for the NSF's activities supporting the
-creation of a more integrated cloud-based system for climate science
+creation of a more integrated cloud-based system for climate science. 
+
+The NDC-C is a 2-year pilot that aims to lay the foundations for an NDC that
+will cater to a wider science community.
 
 "The National Science Foundation (NSF) initiated the development of a National
 Discovery Cloud for Climate (NDC-C) to “federate advanced compute, data,
@@ -41,24 +44,16 @@ using cloud-computing resources (e.g., permafrost landscape analysis in the
 Arctic). Discussions ranged from "grandiose" visions of a cloud-based
 computational environment that users interact with through AI natural-language
 interfaces to what we can do as a disparate group of individually-funded
-projects in the next 6-12 months.
+projects in the next 6-18 months.
 :::
 
 
-# 
+# Workshop activities
 
-![](../_images/qgreenland_net_description_slide.png)
-
-::: {.notes}
-This image of a slide was created for the workshop. The 
-:::
-
-# Workshop activitites
-
-* Breakout groups
-* Panel discussions
+* Guided discussions
   * Collective impact
   * Equity and education
+* Breakout groups
 * Networking/collaboration time
 
 
@@ -67,6 +62,15 @@ This image of a slide was created for the workshop. The
 * Reccomendations for the NSF NDC-C via a workshop report
 * Slides describing each  project
 * Establishment of actual and potential collaborations 
+
+
+#
+
+![](../_images/qgreenland_net_description_slide.png)
+
+::: {.notes}
+This is an image of the QGreenland-Net slide created at the workshop.
+:::
 
 
 # Collaborations explored
@@ -93,5 +97,5 @@ This image of a slide was created for the workshop. The
 
 * [NDC-C NSF website](https://new.nsf.gov/cise/national-discovery-cloud-climate)
 * [NDC-C workshop website](https://www.nationaldiscoverycloud.org/home)
-* [QGreenland-Net info/planning website](https://qgreenland-net.github.io/)
+* [NDC-C workshop notes](/notes/2024-03-26_ndcc-workshop.md)
 * [More photos from Trey's trip](https://photos.app.goo.gl/gvmBJu3agig49BtAA)
