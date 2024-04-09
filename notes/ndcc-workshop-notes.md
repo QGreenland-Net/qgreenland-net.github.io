@@ -42,6 +42,7 @@ Pierce](https://www.nsf.gov/staff/staff_bio.jsp?lan=mpierce&org=OAC&from_org=OAC
 L. Walton](https://www.nsf.gov/staff/staff_bio.jsp?lan=awalton&from_org=CISE)
 (CISE Deputy Office Director).
 
+
 ## Workshop activities
 
 The workshop utilized the [collective
@@ -53,6 +54,7 @@ collaborations. Collective impact also places importance on defining a
 
 The workshop was comprised of guided discussions, breakout groups, and
 networking/collaboration time.
+
 
 ### Guided Discussions
 
@@ -70,12 +72,19 @@ There were two guided discussions facilitated by the workshop organizers:
   * Leah Kraus, Secretary of the Minorty Serving Cyberinfrastructure Consortium
     (MS-CC)
 
+
 ### Breakout groups
 
 Breakout groups were utilized for focused discussions on topics guided by the
-collective impact framework and goals of the NDC-C.
+collective impact framework and goals of the NDC-C. Breakout groups included discussions on:
 
-TODO: fill this in with more details about breakout groups.
+* Setting a common agenda, guiding priciples, and goals for the NDC-C.
+* Establishing a shared system of measuring succcess/failure.
+* Defining mutually reinforcing activities & identifying areas of collaboration.
+* Identifying mechanisms for continous communication between NDC-C stakeholders.
+* Brainstorming the establishment of a "backbone support organization". For
+  example, conversations about the development of an NSF community office that
+  would coordinate NDC-C activities were discussed in this breakout session.
 
 
 ### Networking & collaboration
@@ -105,7 +114,9 @@ Collaborations that I explored while attending the conference included:
   with me about the possibility of connecting the ADC/DataOne to the National
   Data Platform, which provides AI tools to support data discoverability.
 
+
 ### Workshop outcomes
+
 
 #### Workshop report
 
@@ -113,6 +124,7 @@ At the conclusion of the workshop, a report was drafted. As of April 3, 2024,
 the report has yet to be published. Once published, I would expect it to be
 linked to on the [NDC-C workshop
 website](https://www.nationaldiscoverycloud.org/home).
+
 
 #### Project slides
 
@@ -122,12 +134,13 @@ discussions with their peers at the NSF.
 
 ![QGreenland-Net slide](../_images/qgreenland_net_description_slide.png)
 
+
 #### Actual and potential collaborations
 
 The workshop organizers collected a list of all actual and potential
 collaborations. What collaborations we end up engaging with (if any) are up to
-us to make. There may be funding opportunities for supporting collaborations
-like the ones listed above in the future.
+us to make. There may be funding opportunities for supporting collaborations in
+the future.
 
 
 # Resources
