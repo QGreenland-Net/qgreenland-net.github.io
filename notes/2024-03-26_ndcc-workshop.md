@@ -1,5 +1,5 @@
 ---
-title: "National Discovery Cloud for Climate (NDC-C) workshop notes"
+title: "2024-03-26: National Discovery Cloud for Climate (NDC-C) workshop notes"
 date: "2024-03-26"
 author:
   - name: "{{< var people.trey.name >}}"
