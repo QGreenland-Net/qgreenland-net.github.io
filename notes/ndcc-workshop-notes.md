@@ -1,6 +1,9 @@
 ---
 title: "National Discovery Cloud for Climate (NDC-C) workshop notes"
 date: "2024-03-26"
+author:
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
 ---
 
 # National Discovery Cloud for Climate (NDC-C) workshop notes
