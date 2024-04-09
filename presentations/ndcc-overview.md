@@ -48,20 +48,12 @@ projects in the next 6-18 months.
 :::
 
 
-# 
-
-![](../_images/qgreenland_net_description_slide.png)
-
-::: {.notes}
-This image of a slide was created for the workshop. The 
-:::
-
 # Workshop activities
 
-* Breakout groups
 * Guided discussions
   * Collective impact
   * Equity and education
+* Breakout groups
 * Networking/collaboration time
 
 
@@ -70,6 +62,15 @@ This image of a slide was created for the workshop. The
 * Reccomendations for the NSF NDC-C via a workshop report
 * Slides describing each  project
 * Establishment of actual and potential collaborations 
+
+
+#
+
+![](../_images/qgreenland_net_description_slide.png)
+
+::: {.notes}
+This is an image of the QGreenland-Net slide created at the workshop.
+:::
 
 
 # Collaborations explored
