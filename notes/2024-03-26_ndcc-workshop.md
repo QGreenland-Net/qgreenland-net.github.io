@@ -6,8 +6,6 @@ author:
     orcid: "{{< var people.trey.orcid >}}"
 ---
 
-# National Discovery Cloud for Climate (NDC-C) workshop notes
-
 The National Discovery Cloud for Climate (NDC-C) workshop took place from March
 6-8, 2024 in San Diego, CA. Trey Stafford attended the workshop on behalf of the
 QGreenland-Net project.
