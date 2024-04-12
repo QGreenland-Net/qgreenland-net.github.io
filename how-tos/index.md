@@ -25,7 +25,7 @@ In the Outlook web view:
       availability, not meeting titles.
 
 
-## Kubernetes how-tos
+## Kubernetes
 
 ### How to configure Rancher Desktop
 
