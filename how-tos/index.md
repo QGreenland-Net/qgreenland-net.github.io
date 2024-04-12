@@ -42,14 +42,14 @@ Developers should have access to two sets of configuration:
 
 The `KUBECONFIG` envvar should include these paths:
 
-```
+```{.bash}
 export KUBECONFIG=~/.kube/qgnet_config:~/.kube/config
 ```
 
 Once `KUBECONFIG` is set, you can view available contexts with `kubectl config
 get-contexts`:
 
-```
+```{.bash}
 $ kubectl config get-contexts
 CURRENT   NAME              CLUSTER           AUTHINFO          NAMESPACE
 *         dev-qgnet         dev-dataone       dev-qgnet         qgnet
@@ -58,7 +58,7 @@ CURRENT   NAME              CLUSTER           AUTHINFO          NAMESPACE
 
 To set the context:
 
-```
+```{.bash}
 kubectl config use-context <context-name>
 ```
 
