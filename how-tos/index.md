@@ -29,7 +29,7 @@ In the Outlook web view:
 
 ### How to configure Rancher Desktop
 
-* After installation, you may need to set the VM resource limits higher.
+* After installation, you may need to set the VM resource limits higher. [About 50% of your system's CPUs and memory is recommended](https://learning.nceas.ucsb.edu/2024-03-arctic/sections/docker-containers.html#installing-rancher-desktop).
     * The defaults were too low for some deployments and we bumped to 6 CPUs & 8+ GB
       memory in response.
 
