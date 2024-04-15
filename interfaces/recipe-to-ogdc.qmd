@@ -1,0 +1,40 @@
+---
+title: "Recipe to OGDC"
+---
+
+This is the interface between the open source recipe for data transformation and the ADC
+system for doing the transformation (Open Geospatial Data Cloud (OGDC)).
+
+
+```{mermaid}
+graph LR
+
+%% Definitions
+subgraph ADC_K8S[ADC Kubernetes]
+  SELF_HOSTED_GHA_RUNNER[Self-hosted GHA runner]
+  OGDC[Open Geospatial Data Cloud]
+end
+
+subgraph RECIPE_REPO[Recipe repo]
+  GHA[GitHub Actions]
+  RECIPE[Recipe]
+  SECRET[Secret token]
+end
+
+
+%% Relationships
+
+%% IMPORTANT: Keep these relationships first or styles will break!
+SELF_HOSTED_GHA_RUNNER -->|trigger| OGDC
+SELF_HOSTED_GHA_RUNNER -->|status| GHA
+
+GHA -->|trigger| SELF_HOSTED_GHA_RUNNER
+SECRET -->|read| GHA
+RECIPE -->|on change| GHA
+
+
+%% Style
+style ADC_K8S fill:#FFFFFF;
+style RECIPE_REPO fill:#FFFFFF;
+linkStyle 1,2 stroke:#ff6666,stroke-width:2px;
+```
