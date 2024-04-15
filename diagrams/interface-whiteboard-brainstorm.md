@@ -34,3 +34,13 @@ Interfaces to note:
 * OGDC <-> DataONE: DataONE already has a defined interface, so we just need to
   be aware of that as we develop the OGDC components that talk directly to
   DataONE.
+
+
+Other notes:
+
+* Rather than one repo per recipe, we could start with a single repo w/ many
+  recipes (e.g., one subdir for each recipe). This reduces complexity/management
+  of repos.
+
+* We think a "local" GitHub Action runner might be a solution for the GitHub <->
+  OGDC communication & auth?
