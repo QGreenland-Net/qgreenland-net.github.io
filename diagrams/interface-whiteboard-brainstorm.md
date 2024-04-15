@@ -35,6 +35,13 @@ Interfaces to note:
   be aware of that as we develop the OGDC components that talk directly to
   DataONE.
 
+* TODO: we need to define the interface between OGDC outputs and the
+  PDG. Currently pipeline writes out tiles to disk, and web UI accesses those
+  tiles directly through Apache (`/var/www/tiles`). End goal is to have
+  communication w/ DataONE API itself. API written a couple decades ago, does
+  not currently include support for tiles. We need to figure out what the
+  timescale is for the DataONE support of 3D tiles.
+
 
 Other notes:
 
