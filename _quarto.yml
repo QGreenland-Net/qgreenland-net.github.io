@@ -19,6 +19,8 @@ website:
         href: "how-tos/index.md"
       - text: "Diagrams"
         href: "diagrams/index.md"
+      - text: "Interfaces"
+        href: "interfaces/index.md"
       - text: "Presentations"
         href: "presentations/index.md"
 
