@@ -8,6 +8,11 @@ author:
     orcid: "{{< var people.trey.orcid >}}"
 ---
 
+:::{.callout-note}
+Canonical interface definitions live at the [interfaces listing
+page](/interfaces/index.md).
+:::
+
 Trey, Matt, and Twila met in Boulder on the afternoon of April 15th to have a
 walk-and-talk. The conversation included discussion about QGreenland-Net's
 various software componenets and how we can effectively divide work between
@@ -26,6 +31,7 @@ Interfaces to note:
   cluster. We imagine a listener service (maybe a local GHA runner) that waits
   for an incoming HTTP request containing a token + recipe, which it then
   submits to the cluster as a job.
+    * [Read more!](/interfaces/recipe-to-ogdc.qmd)
 
 * Recipe author -> OGDC job definition: we want to specify an interface for
   recipe authors to submit instructions (a series of gdal/ogr commands) to the
