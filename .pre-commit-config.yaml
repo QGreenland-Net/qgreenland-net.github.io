@@ -1,0 +1,25 @@
+ci:
+  autoupdate_schedule: "monthly"
+  autoupdate_commit_msg: "chore: update pre-commit hooks"
+  autofix_prs: false # Comment "pre-commit.ci autofix" on a PR to trigger
+
+repos:
+  - repo: "https://github.com/pre-commit/pre-commit-hooks"
+    rev: "v4.4.0"
+    hooks:
+      - id: "check-added-large-files"
+      - id: "check-vcs-permalinks"
+      - id: "check-yaml"
+      - id: "end-of-file-fixer"
+      - id: "trailing-whitespace"
+
+  - repo: "https://github.com/codespell-project/codespell"
+    rev: "v2.2.4"
+    hooks:
+      - id: "codespell"
+        exclude: ".codespellignore"
+
+  - repo: "https://github.com/mfisher87/alexjs-pre-commit-mirror"
+    rev: "v11.0.1"  # Use the sha / tag you prefer
+    hooks:
+    - id: "alex"
