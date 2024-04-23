@@ -1,0 +1,88 @@
+---
+title: "Recipe author -> recipe repository"
+---
+
+This is the interface between a recipe author, typically a researcher, and our
+recipe repository. The interface largely comprises two file formats:
+
+* "Simple recipe"
+  ([spike](https://github.com/QGreenland-Net/simple-recipe-representation-exploration)):
+  A representation which minimizes time-to-science by providing a familiar
+  interface for transformations. For example, a series of GDAL commands in a text
+  file, separated by newlines. Tooling for testing these is included. Inspired
+  by `repo2docker`.
+
+  :::{.callout-warning}
+  "Simple" is an uninclusive term. What about "Linear command recipe"? Perhaps
+  not concise enough.
+  :::
+
+* "Raw recipe": A recipe that provides an "escape hatch" for more complicated
+  cases that can't be represented in the simple representation. This is the
+  "bring-your-own-Dockerfile" option in the `repo2docker` comparison.
+
+
+```{mermaid}
+graph LR
+
+%% Definitions
+RECIPE_AUTHOR((Recipe author))
+
+subgraph RECIPE_REPO[Recipe repo]
+  GHA[GitHub Actions]
+  RECIPE[Recipe]
+end
+
+
+%% Relationships
+
+%% IMPORTANT: Keep these relationships first or styles will break!
+RECIPE_AUTHOR -->|"Simple" recipe| RECIPE
+RECIPE_AUTHOR -->|"Raw" recipe| RECIPE
+
+RECIPE -->|trigger| GHA
+
+
+%% Style
+style RECIPE_REPO fill:#ffffff;
+linkStyle 0,1 stroke:#ff6666,stroke-width:2px;
+```
+
+
+## "Simple" recipe interface
+
+```{.bash filename="recipe.sh"}
+# WARNING: This is not a real shell script, although it is meant to look and
+# feel like one. Each line, unless it starts with #, is interpreted as a
+# workflow step. To test, use the `ogdc-workflow-test` program.
+gdalwarp -t_srs EPSG:3413 {input} {output} 
+gdal_transform ... {output} {input}
+```
+
+```{.yaml filename="meta.yaml"}
+name: "My recipe"
+id: "my-recipe"
+input:
+  url: "https://example.com/my-data.tif"
+output:
+  dataone_id: "XYZ"
+```
+
+In this YAML file, we might consider:
+
+* `input.doi`
+* `input.dataone_id`
+* `output.append` (boolean: are we adding data to a dataset?)
+* `output.tile` (boolean)
+* `output.other_feature_flags`
+
+
+## "Raw" recipe interface
+
+Depends on our choice of workflow technology. We would expect users to provide
+a recipe file or files following the specification for our workflow technology.
+We would only want the user to specify the minimal representation of their
+worklow.
+
+For example, if we choose Apache Beam, we'd expect a Beam `Pipeline`, which we
+would then run with our own configuration.
