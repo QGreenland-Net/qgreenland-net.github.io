@@ -25,6 +25,8 @@ website:
           href: "interfaces/index.md"
         - text: "Presentations"
           href: "presentations/index.md"
+      - text: "Requirements"
+        href: "requirements.md"
       - text: "How-tos"
         href: "how-tos/index.md"
 
