@@ -9,6 +9,7 @@ title: "Requirements"
 
 * Reproject
 * Subset
+* Resample (down/upsample or re-grid)
 * File-level metadata changes, e.g.:
 	* Assignment or correction of projection
 	* `gdal_edit` operations
