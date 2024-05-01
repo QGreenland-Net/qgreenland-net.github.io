@@ -11,18 +11,22 @@ website:
 
   navbar:
     left:
-      - text: "Decision records"
-        href: "decisions/index.md"
-      - text: "Notes"
-        href: "notes/index.md"
+      - text: "Records"
+        menu:
+        - text: "Decisions"
+          href: "decisions/index.md"
+        - text: "Notes"
+          href: "notes/index.md"
+      - text: "Media"
+        menu:
+        - text: "Diagrams"
+          href: "diagrams/index.md"
+        - text: "Interfaces"
+          href: "interfaces/index.md"
+        - text: "Presentations"
+          href: "presentations/index.md"
       - text: "How-tos"
         href: "how-tos/index.md"
-      - text: "Diagrams"
-        href: "diagrams/index.md"
-      - text: "Interfaces"
-        href: "interfaces/index.md"
-      - text: "Presentations"
-        href: "presentations/index.md"
 
     right:
       - icon: "github"
