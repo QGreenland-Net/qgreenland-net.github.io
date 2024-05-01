@@ -7,6 +7,10 @@ title: "Requirements"
 
 ## Data transformations
 
+* Extract from archive (e.g. `tar.gz`)
+* Change data format (e.g. CSV -> GeoPackage), e.g.:
+  * `gdal_translate`
+  * `ogr2ogr`
 * Reproject
 * Subset
 * Resample (down/upsample or re-grid)
