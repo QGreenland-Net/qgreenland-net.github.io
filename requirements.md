@@ -39,5 +39,16 @@ title: "Requirements"
 
 * User submitted recipes that trigger a workflow that results in downloadable
 	data file(s) archived as a new DataONE dataset
+
+  :::{.callout-important}
+  We've been making the assumption that we'd be archiving our outputs, even if the
+  transformation is "minor", on DataONE. Is this a valid assumption?
+
+  This would enable decoupling of QGreenland from the data ingestion processes. If we
+  don't archive our outputs, we may need to run pipelines which store temporary outputs
+  (e.g. couple day lifetime) in preparation for every QGreenland build (requires some
+  coupling, even if only at the CI layer).
+  :::
+
 * Creation of [3D Tiles](https://www.ogc.org/standard/3dtiles/) for geospatial
 	datasets to enable fast viz in portal cesium app
