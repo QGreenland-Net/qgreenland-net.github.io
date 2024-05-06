@@ -82,9 +82,9 @@ using PF, and all have their own use cases and infra. Needs.
       an “STP” which is a template which allows you to package all info about how to transform
       a legacy format into a new output format and generate STAC compliant metadata.
     * STP is a place like PF where people can coordinate on upstream data format issues and
-      share best practices. 
+      share best practices.
     * Can create an STP for an individual dataset to fix up issues.
-    * DevSeed orchestrates STP at scale in different ways. 
+    * DevSeed orchestrates STP at scale in different ways.
           * https://github.com/developmentseed/stactools-pipelines - for AWS
 
 ### Questions / needs from QGreenland-Net
@@ -110,17 +110,17 @@ using PF, and all have their own use cases and infra. Needs.
   provides those recipes optionally?
     * Geospatial-specialized PTransforms
     * Generic subprocess-calling PTransform
-    * E.g. https://pangeo-forge.readthedocs.io/en/latest/ecosystem.html 
+    * E.g. https://pangeo-forge.readthedocs.io/en/latest/ecosystem.html
 * QGreenland-Net is funding Matt to work on Openscapes. How can we take advantage of
   Openscapes specialization in cross-DAAC collaboration to help understand and meet
   NASA/DAAC needs and bring in collaborators to move faster?
 * If we do decide to integrate with PF, Aimee says “yes, we can integrate and can
   contribute!” Join Pangeo Forge coordination meetings! Might be on a hiatus now, in the
   air. Next months will be disruptive because the approach is more of a do-ocracy with
-  less centralized governance. 
+  less centralized governance.
 * Aimee’s roadmap for governance is a WIP. More work needs to be done to communicate the
   new vision for PF.
-* Look at Aimee’s cloud optimized formats guide: https://guide.cloudnativegeo.org/ 
+* Look at Aimee’s cloud optimized formats guide: https://guide.cloudnativegeo.org/
 
 
 

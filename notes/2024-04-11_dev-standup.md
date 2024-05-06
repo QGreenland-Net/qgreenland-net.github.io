@@ -27,7 +27,7 @@ date: "2024-04-11"
 
 * Matt and Trey were exploring how to deploy/setup Apache Spark on k8s, so that we could test running Apache beam workflows.
   Got stuck on configuring Spark. Documentation is dense, a LOT to learn.
-    * Spark originally designed for JVM-based langs. Python, Go, others tacked on later. We want to focus on accessibility, we should pick a lang. Python makes sense as a focus. 
+    * Spark originally designed for JVM-based langs. Python, Go, others tacked on later. We want to focus on accessibility, we should pick a lang. Python makes sense as a focus.
 * Is ADC transitioning from Ray.io -> parsl? Why?
   Are they used for different scenarios?
   * [viz-workflow](https://github.com/PermafrostDiscoveryGateway/viz-workflow/tree/main) README:
@@ -46,5 +46,3 @@ date: "2024-04-11"
 
 - [ ] Rushiraj: Ask Juliet for opinions on Parsl vs. Ray
 - [ ] Continue exploring Parsl
-
-

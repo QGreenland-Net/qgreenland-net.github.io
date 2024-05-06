@@ -20,7 +20,7 @@ author:
 
 ::: {.notes}
 Workshop focused on defining a vision for the NSF's activities supporting the
-creation of a more integrated cloud-based system for climate science. 
+creation of a more integrated cloud-based system for climate science.
 
 The NDC-C is a 2-year pilot that aims to lay the foundations for an NDC that
 will cater to a wider science community.
@@ -61,7 +61,7 @@ projects in the next 6-18 months.
 
 * Reccomendations for the NSF NDC-C via a workshop report
 * Slides describing each  project
-* Establishment of actual and potential collaborations 
+* Establishment of actual and potential collaborations
 
 
 #
