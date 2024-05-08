@@ -76,9 +76,4 @@ date: "2024-04-17"
 - [ ] Matt J add Matt, Trey, Rushiraj to PDG Slack
 - [ ] Schedule meeting to discuss quarterly goals. What are our milestones?
   - [ ] Matt J to share calendar w/ Matt F & Trey
-- [ ] 
-
-
-
-
-
+- [ ]

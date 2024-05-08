@@ -12,7 +12,7 @@ date: "2024-03-25"
 
 ## Discussion
 
-### pangeo-forge 
+### pangeo-forge
 
 * Relationship to goals of OGDC - geoharmonization/transformation of data into standard
   formats.
