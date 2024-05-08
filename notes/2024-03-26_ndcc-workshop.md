@@ -27,7 +27,7 @@ using cloud-computing resources (e.g., permafrost landscape analysis in the
 Arctic). Discussions ranged from long-term visions of a cloud-based
 computational environment that users interact with through AI natural-language
 interfaces to what we can do as a disparate group of individually-funded
-projects in the next 6-18 months. 
+projects in the next 6-18 months.
 
 The NDC-C is a 2-year pilot that aims to lay the foundations for an NDC that
 will cater to a wider science community.
@@ -35,7 +35,7 @@ will cater to a wider science community.
 There were many discussions about AI, and comparisons between the NDC-C and the
 [National Artificial Intelligence Research Resource
 Pilot](https://new.nsf.gov/focus-areas/artificial-intelligence/nairr) were
-highlighted by the NSF reps in attendance. 
+highlighted by the NSF reps in attendance.
 
 Two NSF representatives were present at the meeting, [Marlon
 Pierce](https://www.nsf.gov/staff/staff_bio.jsp?lan=mpierce&org=OAC&from_org=OAC)
@@ -64,7 +64,7 @@ There were two guided discussions facilitated by the workshop organizers:
 * A conversation with Elizabeth Simmons, Executive Vice Chancellor, UC San
   Diego, about how the collective impact framework has been successfully
   utilized by UC San Diego.
-  
+
 * A panel discussion about equity and education in climate research. Panelists
   were:
   * Olivia Graeve, professor at UC San Diego
