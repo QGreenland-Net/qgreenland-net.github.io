@@ -121,10 +121,9 @@ Collaborations that I explored while attending the conference included:
 
 #### Workshop report
 
-At the conclusion of the workshop, a report was drafted. As of April 3, 2024,
-the report has yet to be published. Once published, I would expect it to be
-linked to on the [NDC-C workshop
-website](https://www.nationaldiscoverycloud.org/home).
+At the conclusion of the workshop, a report was drafted. A final version of the
+report is available as a publicly accessible [PDF on Google
+Drive](https://drive.google.com/file/d/1ArnEynsXef1uQRI-J6dtE0YPwmxUDxsC/view).
 
 
 #### Project slides
