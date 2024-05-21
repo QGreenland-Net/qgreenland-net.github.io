@@ -1,0 +1,48 @@
+---
+title: "Evaluation: Argo Workflows"
+---
+
+## Installation
+
+Argo Workflows installs as a Custom Resource Definition (CRD).
+
+
+## Submitting jobs
+
+Jobs are submitted to the Kubernetes cluster as Custom Resources.
+
+
+## Developer experience
+
+The Argo CLI abstracts away much of the pain of submitting and supervising work on a
+Kubernetes cluster.
+
+```{mermaid}
+flowchart LR
+  DEV(Developer w/ Argo CLI)
+  
+  subgraph KUBERNETES[Kubernetes cluster]
+    WORKFLOW_PODS[Workflow pods]
+  end
+
+  DEV -->|submit| KUBERNETES
+  KUBERNETES -->|status| DEV
+
+  style KUBERNETES fill:#FFFFFF;
+```
+
+
+## Monitoring
+
+Argo Workflows offers a robust user interface for visualizing jobs, their status, their
+logs, and accessing output artifacts.
+
+
+## Maturity
+
+Adopted by Cloud Native Computing Foundation, well-funded, and very mature.
+
+
+## Community
+
+Very large and very well-managed community.

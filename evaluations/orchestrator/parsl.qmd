@@ -1,0 +1,77 @@
+---
+title: "Evaluation: Parsl"
+---
+
+Only the Kubernetes executor is considered for the purpose of this evaluation.
+
+
+## Installation
+
+Parsl installs as a Python package (PyPI or Conda Forge).
+
+
+## Submitting jobs
+
+The Parsl Python program must be capable of communicating with the Kubernetes cluster,
+and the pods created on the cluster must similarly be capable of communicating back with
+the Parsl Python program.
+
+In a production scenario, OGDC jobs will be started from within the cluster (triggered
+by events on GitHub) anyway. But in a development scenario, this adds complexity.
+
+
+## Developer experience
+
+There isn't any tooling to improve the developer experience. This has been a
+long-standing issue with the Kubernetes executor; we
+[submitted a PR](https://github.com/Parsl/parsl/pull/3357) to improve the
+situation slightly, removing the need to fork Parsl to do this.
+
+```{mermaid}
+flowchart LR
+  DEV(Developer)
+  
+  subgraph KUBERNETES[Kubernetes cluster]
+    INTERCHANGE_JOB["Interchange" Job]
+    WORKFLOW_PODS[Workflow pods]
+  end
+
+  DEV -->|submit| INTERCHANGE_JOB
+  DEV -->|query job status| KUBERNETES
+  DEV -->|query pod status| KUBERNETES
+  DEV -->|query pod logs| KUBERNETES
+
+  WORKFLOW_PODS -->|obey| INTERCHANGE_JOB
+  INTERCHANGE_JOB -->|coordinate| WORKFLOW_PODS
+
+  style KUBERNETES fill:#FFFFFF;
+```
+
+
+## Monitoring
+
+[Monitoring features](https://parsl.readthedocs.io/en/stable/userguide/monitoring.html)
+are very low-level (SQLite database).
+
+A web dashboard can be run on top of that database which provides limited
+information about workflows (CPU & memory usage, DAG visualization,
+statistics), but does not provide access to logs or workflow artifacts.
+
+
+## Maturity
+
+Parl is mature, it seems, for its target audience (HPC), but less so for our
+use case (Kubernetes).
+
+
+## Community
+
+Vibrant but modestly-sized community. Largely, I think, not using it on Kubernetes.
+
+There's an annual ParslFest community meeting, 5 so far. Looking at an
+[agenda](https://parsl-project.org/parslfest/parslfest2023.html), it seems
+there's a strong focus on HPC.
+
+Ben Clifford, the maintainer who merged our PR, presented some wonderful
+[community engagement slides](https://parsl-project.org/parslfest/2023/clifford-community.pdf)
+in 2023, but the presentation was not recorded.
