@@ -17,7 +17,7 @@ date: "2024-04-17"
 
 #### New interface diagram
 
-[View new "recipe to OGDC" interface diagram](/interfaces/recipe-to-ogdc.qmd)
+[View new "recipe to OGDC" interface diagram](/interfaces/recipe-repo-to-ogdc.qmd)
 
 * Matt J:
   * "Looks super compatible" with what ADC is doing already.

@@ -31,7 +31,7 @@ Interfaces to note:
   cluster. We imagine a listener service (maybe a local GHA runner) that waits
   for an incoming HTTP request containing a token + recipe, which it then
   submits to the cluster as a job.
-    * [Read more!](/interfaces/recipe-to-ogdc.qmd)
+    * [Read more!](/interfaces/recipe-repo-to-ogdc.qmd)
 
 * Recipe author -> OGDC job definition: we want to specify an interface for
   recipe authors to submit instructions (a series of gdal/ogr commands) to the
