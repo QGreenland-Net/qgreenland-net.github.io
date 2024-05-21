@@ -32,6 +32,27 @@ flowchart LR
 ```
 
 
+## Dependencies
+
+### Inter-task
+
+Task inputs and outputs are expressed explicitly and are automatically wired up
+with dependents and dependencies.
+
+Dependencies between tasks can be expressed two ways:
+
+* [Steps](https://argo-workflows.readthedocs.io/en/latest/walk-through/steps/):
+  A simple list-based representation that supports parallelism.
+* [DAG](https://argo-workflows.readthedocs.io/en/latest/walk-through/dag/):
+  Tasks specify the names of other task(s) they depend on.
+
+
+### Software
+
+Each task in an Argo Workflows graph can run on a different container image, so
+the workflow developer has granular control of software dependencies.
+
+
 ## Monitoring
 
 Argo Workflows offers a robust user interface for visualizing jobs, their status, their

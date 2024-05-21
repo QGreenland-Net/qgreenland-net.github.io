@@ -48,6 +48,20 @@ flowchart LR
 ```
 
 
+## Dependencies
+
+### Inter-task
+
+Task dependencies are expressed imperatively as Future calls.
+
+
+### Software
+
+Software dependencies are shared between all tasks (the container image is specified at the
+[provider](https://parsl.readthedocs.io/en/stable/userguide/configuring.html#kubernetes-clusters)
+level).
+
+
 ## Monitoring
 
 [Monitoring features](https://parsl.readthedocs.io/en/stable/userguide/monitoring.html)
