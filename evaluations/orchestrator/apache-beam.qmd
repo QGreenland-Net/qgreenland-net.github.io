@@ -1,0 +1,37 @@
+---
+title: "Evaluation: Apache Beam"
+---
+
+Apache Beam itself is not an orchestrator, it's a DSL. For the purpose of this
+evaluation, we're considering Beam paired with Apache Spark.
+
+
+## Installation
+
+...
+
+
+## Submitting jobs
+
+...
+
+
+## Developer experience
+
+Apache Beam features a "Direct Runner" which is optimized for correctness, not
+speed. No infrastructure is required.
+
+
+## Monitoring
+
+...
+
+
+## Maturity
+
+...
+
+
+## Community
+
+...
