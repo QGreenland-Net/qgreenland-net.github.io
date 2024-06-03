@@ -30,7 +30,7 @@ situation slightly, removing the need to fork Parsl to do this.
 ```{mermaid}
 flowchart LR
   DEV(Developer)
-  
+
   subgraph KUBERNETES[Kubernetes cluster]
     INTERCHANGE_JOB["Interchange" Job]
     WORKFLOW_PODS[Workflow pods]
