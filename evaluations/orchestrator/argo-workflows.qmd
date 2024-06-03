@@ -20,7 +20,7 @@ Kubernetes cluster.
 ```{mermaid}
 flowchart LR
   DEV(Developer w/ Argo CLI)
-  
+
   subgraph KUBERNETES[Kubernetes cluster]
     WORKFLOW_PODS[Workflow pods]
   end

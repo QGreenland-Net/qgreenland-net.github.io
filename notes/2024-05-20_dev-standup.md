@@ -33,4 +33,4 @@ date: "2024-05-20"
 - [ ] Matt: Schedule design meeting
 - [ ] Rushiraj: Populate or extend rubrick based on experiences tiling with Parsl
   * https://docs.google.com/spreadsheets/d/1f8CgOu1wXnaoAfEODrCkxNfY-Xq_as1AJPrPVK74lM0/edit#gid=1504304024
-- [ ] Rushiraj review https://github.com/QGreenland-Net/qgreenland-net.github.io/pull/39 
+- [ ] Rushiraj review https://github.com/QGreenland-Net/qgreenland-net.github.io/pull/39

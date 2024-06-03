@@ -42,9 +42,9 @@ Documentation: https://qgreenland-net.github.io/requirements.html
 
 ## Tool selection
 
-https://qgreenland-net.github.io/evaluations/orchestrator/ 
+https://qgreenland-net.github.io/evaluations/orchestrator/
 
-* Considering: 
+* Considering:
 	* Argo
     * How is storage managed? Dynamic PVCs?
 		* Continued evaluation: What does the parallel version of one of our example workflows
@@ -60,7 +60,7 @@ https://qgreenland-net.github.io/evaluations/orchestrator/
 
 
 
-## Implementation roadmap 
+## Implementation roadmap
 
 NOTE: Pre-populated by Trey & Matt, but we didn't get to discussing it today.
 
@@ -102,5 +102,3 @@ Let’s break this into milestones! Brainstorm:
 	- [ ] Rushiraj: Work with ADC k8s admins to install Argo Workflows to “argo” namespace
 - [x] Matt: Set up a new daily standup meeting (10 minutes) without Trey. Reach out if we need
 			him!
-
-
