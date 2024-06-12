@@ -1,5 +1,5 @@
 ---
-title: "2024-06-12: Matt & Rushiraj chat"
+title: "2024-06-12: Dev planning chat"
 date: "2024-06-12"
 ---
 
