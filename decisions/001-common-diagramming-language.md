@@ -8,7 +8,7 @@ author:
   - name: "{{< var people.trey.name >}}"
     orcid: "{{< var people.trey.orcid >}}"
   - name: "{{< var people.rushiraj.name >}}"
-status: "Pending"
+status: "Accepted"
 ---
 
 ## Context
