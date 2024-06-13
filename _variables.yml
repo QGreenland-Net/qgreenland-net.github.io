@@ -7,3 +7,19 @@ people:
     orcid: "0000-0002-5510-0055"
   rushiraj:
     name: "Rushiraj Nenuji"
+    # orcid: TODO
+  ian:
+    name: "Ian Nesbitt"
+    orcid: "0000-0001-5828-6070"
+  juliet:
+    name: "Juliet Cohen"
+    # orcid: TODO
+  matt-jones:
+    name: "Matt Jones"
+    orcid: "0000-0003-0077-4738"
+  alyse:
+    name: "Alyse Thurber"
+    orcid: "0009-0003-2026-0002"
+  twila:
+    name: "Twila Moon"
+    orcid: "0000-0003-0968-7008"
