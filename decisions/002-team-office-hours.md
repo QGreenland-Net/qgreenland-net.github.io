@@ -8,6 +8,7 @@ author:
   - name: "{{< var people.trey.name >}}"
     orcid: "{{< var people.trey.orcid >}}"
   - name: "{{< var people.rushiraj.name >}}"
+    orcid: "{{< var people.rushiraj.orcid >}}"
   - name: "{{< var people.twila.name >}}"
     orcid: "{{< var people.twila.orcid >}}"
   - name: "{{< var people.matt-jones.name >}}"
