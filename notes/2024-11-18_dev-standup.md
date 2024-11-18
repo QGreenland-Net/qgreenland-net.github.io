@@ -25,11 +25,11 @@ date: "2024-11-18"
     * OGDC development - latest argo developments, etc.
         * Argo
             * Feel comfortable moving forward with using argo as our tech choice for the OGDC.
-            * We may still want to use parsl udner the hood, and may want to experiment with how to use argo to deploy parsl workflows onto the cluster.
+            * We may still want to use parsl under the hood, and may want to experiment with how to use argo to deploy parsl workflows onto the cluster.
             * Were able to get a few recipes working with argo
             * Good community support, open-source
             * Argo has CI/CD pipelines that might help us to integrate the use of GitHub. 
-            * Reccommend use of helm charts for kubernetes
+            * Recommend use of helm charts for kubernetes
                 * There is helm support for argo.
                 * Bitnami helm charts are well-done. Was able to successfully run on local cluster
                 * Planning to work on adding argo to the ADC k8s cluster this week. 
