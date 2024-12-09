@@ -18,9 +18,9 @@ date: "2024-11-18"
     * Need Robyn's GPG keys
 * Updates from NSIDC
     * Trey: 18% this month, 84% Dec. and Jan
-    * Robyn: 48% Nov. - Feb. 
+    * Robyn: 48% Nov. - Feb.
 * Updates from ADC
-    * Rushiraj - 75% of time for now on QGreenland 
+    * Rushiraj - 75% of time for now on QGreenland
     * Alyona - ~75% of time for now
     * OGDC development - latest argo developments, etc.
         * Argo
@@ -28,11 +28,11 @@ date: "2024-11-18"
             * We may still want to use parsl under the hood, and may want to experiment with how to use argo to deploy parsl workflows onto the cluster.
             * Were able to get a few recipes working with argo
             * Good community support, open-source
-            * Argo has CI/CD pipelines that might help us to integrate the use of GitHub. 
+            * Argo has CI/CD pipelines that might help us to integrate the use of GitHub.
             * Recommend use of helm charts for kubernetes
                 * There is helm support for argo.
                 * Bitnami helm charts are well-done. Was able to successfully run on local cluster
-                * Planning to work on adding argo to the ADC k8s cluster this week. 
+                * Planning to work on adding argo to the ADC k8s cluster this week.
     * Have made some progress on subset download feature. Once processing is complete and visualization ready, if someone wants data for an area of interest, allow user to draw e.g., polygon feature to subset-download the data
         * STAC or e.g., WMTS from the 3D tiles
     * Portal development
