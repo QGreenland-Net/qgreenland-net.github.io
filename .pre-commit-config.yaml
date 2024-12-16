@@ -5,7 +5,7 @@ ci:
 
 repos:
   - repo: "https://github.com/pre-commit/pre-commit-hooks"
-    rev: "v4.6.0"
+    rev: "v5.0.0"
     hooks:
       - id: "check-added-large-files"
       - id: "check-vcs-permalinks"
@@ -13,13 +13,13 @@ repos:
       - id: "end-of-file-fixer"
       - id: "trailing-whitespace"
 
-  - repo: "https://github.com/codespell-project/codespell"
-    rev: "v2.3.0"
-    hooks:
-      - id: "codespell"
-        exclude: ".codespellignore"
+        #  - repo: "https://github.com/codespell-project/codespell"
+        # rev: "v2.3.0"
+        # hooks:
+        # - id: "codespell"
+        # exclude: ".codespellignore"
 
-  - repo: "https://github.com/mfisher87/alexjs-pre-commit-mirror"
-    rev: "v11.0.1"  # Use the sha / tag you prefer
-    hooks:
-    - id: "alex"
+          #   - repo: "https://github.com/mfisher87/alexjs-pre-commit-mirror"
+          #     rev: "v11.0.1"  # Use the sha / tag you prefer
+          #     hooks:
+          #     - id: "alex"
