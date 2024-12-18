@@ -20,7 +20,7 @@ date: "2024-12-16"
     * Contributing guidelines:
         * Rushiraj: will share NCEAS contributing docs. (e.g., prefix branch name with `feature-` or `bugfix-`).
             * [CONTRIBUTING doc](https://github.com/NCEAS/metacatui/blob/main/CONTRIBUTING.md#-development-workflow)
-        * Alyona: not a fan of `development` branch. 
+        * Alyona: not a fan of `development` branch.
         * Should we have expectations around PR approvals & how long we should expect to wait.
         * [PDG_workflow](https://github.com/orgs/PermafrostDiscoveryGateway/projects/16)
             * related to OGDC3, OGDC4
@@ -38,5 +38,3 @@ date: "2024-12-16"
 - [ ] [name=Rushiraj] Schedule meeting for portal-specific development. What
       level of effort to add new layers to portal?When2meet for this with
       options for 2nd half of January
-
-
