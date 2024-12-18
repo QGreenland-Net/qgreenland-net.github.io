@@ -4,7 +4,7 @@ title: "Contributing"
 
 ## Repository Management
 
-* All new repositories should be created in the [Greenland-Net](https://github.com/QGreenland-Net) github organization. 
+* All new repositories should be created in the [Greenland-Net](https://github.com/QGreenland-Net) github organization using the [template](https://github.com/QGreenland-Net/template).
 * If the repository is exploratory the name should be `repo-exploration`.
 * Repositories that are no longer in use should be archived promptly.
 * We strive to follow best practices to structure the repository for the given need. For example use the [scientific python guide](https://scientific-python.org/development/).
