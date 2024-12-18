@@ -31,6 +31,8 @@ website:
         href: "evaluations/index.md"
       - text: "How-tos"
         href: "how-tos/index.md"
+      - text: "Contributing"
+        href: "contributing/index.md"
 
     right:
       - icon: "github"
