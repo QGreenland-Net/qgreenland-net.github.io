@@ -21,9 +21,9 @@ date: "2024-12-18"
     * Currently learning more about `helm` and making it easier to e.g., override the PV host path in dev.
     * [dataone_k8s_dev](https://github.com/DataONEorg/k8s-cluster)
 * Rushiraj
-    * Continuing to modularize PDG pipeline work. Thinking about how we might integrate argo or parsl. Figuring out paralell processing. 
+    * Continuing to modularize PDG pipeline work. Thinking about how we might integrate argo or parsl. Figuring out paralell processing.
         * Maybe pair on this after the holidays.
-    * Looking over architecture diagrams. 
+    * Looking over architecture diagrams.
     * Argo artifact repository
         * [Hash store](https://github.com/DataONEorg/hashstore) for objects in dataone
         * input artifacts could be directly used from disk using this store, instead of needing to fetch it as a separate step.
@@ -32,8 +32,8 @@ date: "2024-12-18"
     * Went over parameters and removed redundancies
     * Adjusting settings & testing.
     * Next step: add specific raster capabilities
-    * Will be able to query specific tiles from QGIS. 
+    * Will be able to query specific tiles from QGIS.
 * Robyn
-    * Working on bringing over ice basins example to `ogdc-recipes` to run with `ogdc-runner`. 
+    * Working on bringing over ice basins example to `ogdc-recipes` to run with `ogdc-runner`.
     * Planning to init contributing doc
     * Familiarizing with helm
