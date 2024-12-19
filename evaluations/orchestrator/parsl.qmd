@@ -89,3 +89,10 @@ there's a strong focus on HPC.
 Ben Clifford, the maintainer who merged our PR, presented some wonderful
 [community engagement slides](https://parsl-project.org/parslfest/2023/clifford-community.pdf)
 in 2023, but the presentation was not recorded.
+
+
+## Exploratory code
+
+The QGreenland-Net dev team explored the use of `parsl` in the
+[parsl-exploration](https://github.com/QGreenland-Net/parsl-exploration)
+repository.

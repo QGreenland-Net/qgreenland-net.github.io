@@ -67,3 +67,12 @@ Adopted by Cloud Native Computing Foundation, well-funded, and very mature.
 ## Community
 
 Very large and very well-managed community.
+
+
+## Exploratory code
+
+The QGreenland-Net dev team explored the use of `argo` in the
+[argo-exploration](https://github.com/QGreenland-Net/argo-exploration)
+repository. The team decided to move forward with development using `argo`. The
+latest can be found in
+[ogdc-runner](https://github.com/QGreenland-Net/ogdc-runner).

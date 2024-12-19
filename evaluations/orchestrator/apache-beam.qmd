@@ -35,3 +35,9 @@ speed. No infrastructure is required.
 ## Community
 
 ...
+
+## Exploratory code
+
+The QGreenland-Net dev team explored the use of apache beam in the
+[apache-beam-exploration](https://github.com/QGreenland-Net/apache-beam-exploration)
+repository. The team decided to move forward with development using apache beam.
