@@ -18,7 +18,7 @@ title: "Contributing"
 ## Code Review
 
 * Create pull requests liberally. Ideally each pull request implements a single feature tracked by an issue on the [project board](https://github.com/orgs/QGreenland-Net/projects/1/views/1).
-    * Make sure pull request is linked to related issue in the description. 
-* Add other team members as reviewers on all pull requests. 
-    * Ping individual contributors on slack if their review is desired. 
+    * Make sure pull request is linked to related issue in the description.
+* Add other team members as reviewers on all pull requests.
+    * Ping individual contributors on slack if their review is desired.
     * Wait for atleast one approval before merging.
