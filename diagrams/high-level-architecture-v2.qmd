@@ -7,7 +7,7 @@ mermaid:
 
 ```{mermaid}
 flowchart TD
-    external_data["External data (e.g., NOAA or NASA data)"]
+    external_data["External data <br> (e.g., NOAA or NASA data)"]
     ogdc_recipe[OGDC Recipe]
     subgraph ADC K8S
         dataone_hash["DataONE Hash Store"]
@@ -23,13 +23,12 @@ flowchart TD
     end
 
     ogdc_recipe --> ogdc-runner
-
     dataone_hash -->|dataone input dataset| argo_workflows
     external_data -->|external input dataset| argo_workflows
     cephfs
     ogdc-runner --> argo_workflows
     argo_workflows -->|intermediate data outputs| minio[minio artifact storage]
-    minio --> cephfs
+    minio --> dataone_hash
     argo_workflows -->|publish data| ADC_metacat
     dataone_hash <-->|ceph volume pool| cephfs
     ADC_metacat -->|store data| dataone_hash
