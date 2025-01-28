@@ -3,8 +3,6 @@ title: "High-level architecture diagram (V2)"
 date: "2025-01-27"
 mermaid:
   theme: neutral
-  width: 2000px
-  height: 600px
 ---
 
 ```{mermaid}
