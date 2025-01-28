@@ -1,0 +1,25 @@
+---
+title: "OGDC Sequence diagram"
+date: "2025-01-27"
+---
+
+```{mermaid}
+sequenceDiagram
+    actor user
+    participant ogdc-runner
+    participant argo
+    participant DataONE
+
+    user->>ogdc-runner: submit recipe
+    ogdc-runner-->>user: workflow ack
+    ogdc-runner->>argo: submit user workflow and process (perform reprojectoin, etc.)
+    argo->>ogdc-runner: user workflow completion
+    ogdc-runner->>DataONE: publish transformed dataset
+    opt Optionally (?) prepare dataset for viz
+    ogdc-runner->>argo: submit ADC viz workflow (e.g., generate 3D tiles)
+    argo->>ogdc-runner: viz workflow completion
+    ogdc-runner->>DataONE: Make viz workflow results avaiable to web portal
+    end
+    DataONE->>user: user downloads results/views in web portal
+
+```

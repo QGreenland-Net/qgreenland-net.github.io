@@ -1,0 +1,36 @@
+---
+title: "High-level architecture diagram (V2)"
+date: "2025-01-27"
+mermaid:
+  theme: neutral
+---
+
+```{mermaid}
+flowchart TD
+    external_data["External data (e.g., NOAA or NASA data)"]
+    ogdc_recipe[OGDC Recipe]
+    subgraph ADC K8S
+        dataone_hash["DataONE Hash Store"]
+        ADC_metacat["Arctic Data Center"]
+        cephfs[(DataONE Ceph Storage)]
+        subgraph OGDC
+            subgraph ogdc-service
+                ogdc-runner["OGDC Runner"]
+            end
+            argo_workflows["Argo Workflows"]
+            minio
+         end
+    end
+
+    ogdc_recipe --> ogdc-runner
+
+    dataone_hash -->|dataone input dataset| argo_workflows
+    external_data -->|external input dataset| argo_workflows
+    cephfs
+    ogdc-runner --> argo_workflows
+    argo_workflows -->|intermediate data outputs| minio[minio artifact storage]
+    minio --> cephfs
+    argo_workflows -->|publish data| ADC_metacat
+    dataone_hash <-->|ceph volume pool| cephfs
+    ADC_metacat -->|store data| dataone_hash
+```
