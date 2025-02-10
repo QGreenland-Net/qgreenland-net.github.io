@@ -11,28 +11,33 @@ website:
 
   navbar:
     left:
-      - text: "Records"
+      - text: "Contributors"
         menu:
         - text: "Decisions"
           href: "decisions/index.md"
         - text: "Notes"
           href: "notes/index.md"
-      - text: "Media"
-        menu:
         - text: "Diagrams"
           href: "diagrams/index.md"
         - text: "Interfaces"
           href: "interfaces/index.md"
         - text: "Presentations"
           href: "presentations/index.md"
-      - text: "Requirements"
-        href: "requirements.md"
-      - text: "Evaluations"
-        href: "evaluations/index.md"
-      - text: "How-tos"
-        href: "how-tos/index.md"
-      - text: "Contributing"
-        href: "contributing/index.md"
+        - text: "Requirements"
+          href: "requirements.md"
+        - text: "Evaluations"
+          href: "evaluations/index.md"
+        - text: "How-tos"
+          href: "how-tos/index.md"
+        - text: "Contributing"
+          href: "contributing/index.md"
+      - text: "Workshops"
+        menu:
+        - text: "Upcoming Workshops"
+          href: "future/index.md"
+        - text: "Past Workshops"
+          href: "past/index.md"
+
 
     right:
       - icon: "github"
