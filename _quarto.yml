@@ -24,6 +24,8 @@ website:
 
   sidebar:
     - title: "Contributors"
+      style: docked
+      background: light
       contents:
         - decisions/index.md
         - notes/index.md
