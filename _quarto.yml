@@ -26,16 +26,17 @@ website:
     - title: "Contributors"
       style: docked
       background: light
+      search: true
       contents:
+        - contributing/index.md
+        - diagrams/index.md
+        - how-tos/index.md
         - decisions/index.md
         - notes/index.md
-        - diagrams/index.md
         - interfaces/index.md
         - presentations/index.md
         - evaluations/index.md
         - requirements.md
-        - how-tos/index.md
-        - contributing/index.md
 
   page-footer:
     left: "© NSIDC and ADC 2024"
