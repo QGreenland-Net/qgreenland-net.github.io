@@ -32,11 +32,7 @@ website:
         - text: "Contributing"
           href: "contributing/index.md"
       - text: "Workshops"
-        menu:
-        - text: "Upcoming Workshops"
-          href: "future/index.md"
-        - text: "Past Workshops"
-          href: "past/index.md"
+        href: "workshops/index.md"
 
 
     right:
