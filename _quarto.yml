@@ -12,25 +12,7 @@ website:
   navbar:
     left:
       - text: "Contributors"
-        menu:
-        - text: "Decisions"
-          href: "decisions/index.md"
-        - text: "Notes"
-          href: "notes/index.md"
-        - text: "Diagrams"
-          href: "diagrams/index.md"
-        - text: "Interfaces"
-          href: "interfaces/index.md"
-        - text: "Presentations"
-          href: "presentations/index.md"
-        - text: "Requirements"
-          href: "requirements.md"
-        - text: "Evaluations"
-          href: "evaluations/index.md"
-        - text: "How-tos"
-          href: "how-tos/index.md"
-        - text: "Contributing"
-          href: "contributing/index.md"
+        href: "contributing/index.md"
       - text: "Workshops"
         href: "workshops/index.md"
 
@@ -40,6 +22,18 @@ website:
         aria-label: "GitHub"
         href: *repo-url
 
+  sidebar:
+    - title: "Contributors"
+      contents:
+        - decisions/index.md
+        - notes/index.md
+        - diagrams/index.md
+        - interfaces/index.md
+        - presentations/index.md
+        - evaluations/index.md
+        - requirements.md
+        - how-tos/index.md
+        - contributing/index.md
 
   page-footer:
     left: "© NSIDC and ADC 2024"
