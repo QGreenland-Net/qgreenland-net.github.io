@@ -2,4 +2,6 @@
 title: "Upcoming Workshops"
 ---
 
-Todo
+Educator Workshop
+July 28-30
+
