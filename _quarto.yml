@@ -14,7 +14,7 @@ website:
       - text: "Contributors"
         href: "contributing/index.md"
       - text: "Workshops"
-        href: "workshops/index.md"
+        href: "future-workshops/index.md"
 
 
     right:
@@ -37,6 +37,13 @@ website:
         - presentations/index.md
         - evaluations/index.md
         - requirements.md
+    - title: "Workshops"
+      style: docked
+      background: light
+      search: true
+      contents:
+        - future-workshops/index.md
+        - past-workshops/index.md
 
   page-footer:
     left: "© NSIDC and ADC 2024"
