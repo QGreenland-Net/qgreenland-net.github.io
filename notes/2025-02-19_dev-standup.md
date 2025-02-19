@@ -10,7 +10,6 @@ date: "2025-02-19"
 * Alyona
 * Rushiraj
 
-
 ## Discussion
 
 * Robyn
@@ -23,10 +22,10 @@ date: "2025-02-19"
 
 * Rushiraj
     * wrapping up PDG packages
-        * success in running in parallel 
+        * success in running in parallel
         * i/o limitations trying to address
     * transforming to OGDC runner as next step
-    *  still hoping to set up CI call 
+    *  still hoping to set up CI call
         * one with ci advising group - will work with Matt on that
         * one with internal team
 
@@ -35,7 +34,6 @@ date: "2025-02-19"
     * [Backfill layers with WMTSCapability.xml for already processed layers](https://github.com/PermafrostDiscoveryGateway/viz-workflow/issues/51)
     * [Enhance WMTSGenerator for Multi-Layer Support](https://github.com/PermafrostDiscoveryGateway/viz-workflow/issues/52)
         * example: a single layer could be available in PNG, geotiffs, geojson, etc...
-
 
 ## Action items
 
