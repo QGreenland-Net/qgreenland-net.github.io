@@ -43,8 +43,8 @@ website:
       search: true
       contents:
         - workshops/index.md
-        - future-workshops/index.md
-        - past-workshops/index.md
+        - workshops/future-workshops.md
+        - workshops/past-workshops.md
 
   page-footer:
     left: "© NSIDC and ADC 2024"
