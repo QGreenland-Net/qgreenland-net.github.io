@@ -4,7 +4,8 @@ date: "2025-03-11"
 format: revealjs
 author:
   - name: "{{< var people.robyn.name >}}"
-    orcid: "{{< var people.robyn.orcid >}}"
+  - name: "{{< var people.rushiraj.name >}}"
+  - name: "{{< var people.alyona.name >}}"
   - name: "{{< var people.trey.name >}}"
     orcid: "{{< var people.trey.orcid >}}"
 ---
