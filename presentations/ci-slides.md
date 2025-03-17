@@ -17,11 +17,11 @@ author:
   <tr>
     <td align="center">
       <img src="../_images/alyona.png" width="150"><br>
-      <b>Alyona (ADC)</b>
+      <b>Alyona</b>
     </td>
     <td align="center">
       <img src="../_images/rushiraj.png" width="150"><br>
-      <b>Rushiraj (ADC)</b>
+      <b>Rushiraj</b>
     </td>
   </tr>
   <tr>
