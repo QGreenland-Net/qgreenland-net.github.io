@@ -29,11 +29,11 @@ author:
 
 ![](../_images/ogdc-4.png)
 
-# # OGDC Architecture
+## OGDC Architecture
 
 ![](../_images/ogdc-5.png)
 
-# OGDC Recipes
+## OGDC Recipes
 
 ![](../_images/ogdc-6.png)
 
