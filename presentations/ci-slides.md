@@ -13,6 +13,29 @@ author:
 
 ## Meet the team
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="../_images/alyona.png" width="150"><br>
+      <b>Alyona (ADC)</b>
+    </td>
+    <td align="center">
+      <img src="../_images/rushiraj.png" width="150"><br>
+      <b>Rushiraj (ADC)</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../_images/robyn.jpeg" width="150"><br>
+      <b>Robyn (NSIDC)</b>
+    </td>
+    <td align="center">
+      <img src="../_images/TreyStafford.jpeg" width="150"><br>
+      <b>Trey (NSIDC)</b>
+    </td>
+  </tr>
+</table>
+
 ## Open Geospatioal Data Cloud
 
 ![](../_images/ogdc-chart1.png)
@@ -48,3 +71,7 @@ author:
 ## Scaling Viz workflow
 
 ![](../_images/ogdc-9.png)
+
+## Tiling Workflow
+
+![](../_images/ogdc-10.png)
