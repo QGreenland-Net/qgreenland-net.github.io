@@ -22,7 +22,7 @@ date: "2025-03-19"
 
 ## Discussion
 
-* Trey: no new updates. 
+* Trey: no new updates.
 * Rushiraj: working on portal updates. Trying to test query updates against prod portal. It has been updated, but need to make sure that it points to the production member node.
 * Robyn: not much to update right now
     * Question on `ogdc-helm` PR: this is marked "WIP". What are next steps?
