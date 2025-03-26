@@ -1,0 +1,110 @@
+---
+title: "High-level architecture diagram (V3.2)"
+date: "2025-03-26"
+mermaid:
+  theme: neutral
+---
+
+```{mermaid}
+---
+title: DataONE Open Geospatial Data Cloud (OGDC) Integrated Workflow
+---
+flowchart TD
+    %% Color definitions
+    classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
+    classDef storage fill:#E6F3FF,stroke:#1E88E5,color:#000;
+    classDef compute fill:#E8F5E9,stroke:#4CAF50,color:#000;
+    classDef service fill:#FFF3E0,stroke:#FF5722,color:#000;
+    classDef database fill:#F3E5F5,stroke:#9C27B0,color:#000;
+    classDef cli fill:#E0E0E0,stroke:#616161,color:#000;
+
+    %% External Components
+    Users[Users]:::cli
+    Browser[Browser]:::cli
+    ArgoCLI["Argo CLI"]:::cli
+    KubectlCLI["Kubectl CLI"]:::cli
+
+    %% External Data Sources
+    external_data["External Data Sources <br> (e.g., NOAA, NASA)"]:::externalData
+
+    %% Kubernetes Cluster
+    subgraph K8s_Cluster["Kubernetes Cluster"]
+        K8s_API["K8s API Server"]
+
+        subgraph Namespaces["Namespaces"]
+            ArgoNS["Argo Namespace"]
+            OGDCNS["OGDC Namespace"]
+            MN_NS["MN Namespace"]
+            KubeSystemNS["kube-system Namespace"]
+        end
+
+        %% OGDC Recipe with More Details
+        subgraph ogdc_recipe["OGDC Recipe Definition"]
+            input_dataset[Input Dataset]
+            transformation_ops["Transformation Operations"]
+            metadata["Metadata Specification"]
+
+            transformation_ops_details["• Reprojection
+            • Resampling
+            • Format Conversion
+            • Spatial/Temporal Filtering"]
+        end
+
+        %% Storage and Compute Components
+        subgraph storage_layer["Storage Layer"]
+            dataone_hash["DataONE Hash Store"]:::storage
+            cephfs[(DataONE Ceph Storage)]:::storage
+            minio["Minio Artifact Storage"]:::storage
+        end
+
+        %% Database Component
+        postgresql[("PostgreSQL")]:::database
+
+        %% OGDC Service Components
+        subgraph OGDC["Open Geospatial Data Cloud (OGDC)"]
+            subgraph ogdc_service["OGDC Service"]
+                ogdc_runner["OGDC Runner"]:::compute
+                Server["Server"]:::service
+                Controller["Controller"]:::service
+                ExecutorPods["Executor Pods"]:::compute
+            end
+            argo_workflows["Argo Workflows"]:::service
+        end
+
+        %% Arctic Data Center
+        ADC_metacat["Arctic Data Center Metacat"]:::service
+    end
+
+    %% Connections
+    Users --> Browser
+    Browser --> K8s_API
+    ArgoCLI --> K8s_API
+    KubectlCLI --> K8s_API
+
+    external_data --> input_dataset
+    input_dataset --> transformation_ops
+    transformation_ops --> ogdc_runner
+
+    ogdc_runner --> argo_workflows
+    dataone_hash -->|"input dataset"| argo_workflows
+
+    argo_workflows -->|"intermediate data"| minio
+    minio --> dataone_hash
+
+    argo_workflows -->|"publish data"| ADC_metacat
+    ADC_metacat -->|"store data"| dataone_hash
+
+    dataone_hash <-->|"ceph volume pool"| cephfs
+
+    postgresql <-->|"metadata/logging"| ADC_metacat
+
+    %% Legend
+    subgraph legend["Legend"]
+        leg_external["External Data"]:::externalData
+        leg_storage["Storage"]:::storage
+        leg_compute["Compute"]:::compute
+        leg_service["Service"]:::service
+        leg_database["Database"]:::database
+        leg_cli["CLI/External Tools"]:::cli
+    end
+```
