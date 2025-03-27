@@ -5,10 +5,8 @@ mermaid:
   theme: neutral
 ---
 
+::: {layout-ncol=1}
 ```{mermaid}
----
-title: DataONE Open Geospatial Data Cloud (OGDC) Workflow
----
 flowchart TD
     %% Color definitions
     classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
@@ -88,16 +86,18 @@ flowchart TD
     dataone_hash <-->|"ceph volume pool"| cephfs
 
     postgresql <-->|"metadata/logging"| ADC_metacat
+```
 
-    %% Legend at the bottom
-    subgraph legend["Legend"]
-        direction LR
-        leg_external["External Data"]:::externalData
-        leg_storage["Storage"]:::storage
-        leg_compute["Compute"]:::compute
-        leg_service["Service"]:::service
-        leg_database["Database"]:::database
-        leg_cli["CLI/External Tools"]:::cli
-        leg_recipe["Recipe"]:::recipe
-    end
+```{mermaid}
+flowchart LR
+    %% Color definitions
+    classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
+    classDef storage fill:#E6F3FF,stroke:#1E88E5,color:#000;
+    classDef compute fill:#E8F5E9,stroke:#4CAF50,color:#000;
+    classDef service fill:#FFF3E0,stroke:#FF5722,color:#000;
+    classDef database fill:#F3E5F5,stroke:#9C27B0,color:#000;
+    classDef cli fill:#E0E0E0,stroke:#616161,color:#000;
+    classDef recipe fill:#F1F8E9,stroke:#4CAF50,color:#000;
+
+    leg_external["External Data"]:::externalData ~~~ leg_storage["Storage"]:::storage ~~~ leg_compute["Compute"]:::compute ~~~ leg_service["Service"]:::service ~~~ leg_database["Database"]:::database ~~~ leg_cli["CLI/External Tools"]:::cli ~~~ leg_recipe["Recipe"]:::recipe
 ```
