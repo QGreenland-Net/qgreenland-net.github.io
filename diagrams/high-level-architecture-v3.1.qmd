@@ -1,0 +1,87 @@
+---
+title: "High-level architecture diagram (V3.1)"
+date: "2025-03-26"
+mermaid:
+  theme: neutral
+---
+
+```{mermaid}
+---
+title: DataONE Open Geospatial Data Cloud (OGDC) Workflow
+---
+flowchart TD
+    %% Color definitions
+    classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
+    classDef storage fill:#E6F3FF,stroke:#1E88E5,color:#000;
+    classDef compute fill:#E8F5E9,stroke:#4CAF50,color:#000;
+    classDef service fill:#FFF3E0,stroke:#FF5722,color:#000;
+    classDef database fill:#F3E5F5,stroke:#9C27B0,color:#000;
+
+    %% External Data Sources
+    external_data["External Data Sources <br> (e.g., NOAA, NASA)"]
+    external_data:::externalData
+
+    %% OGDC Recipe with More Details
+    subgraph ogdc_recipe["OGDC Recipe Definition"]
+        input_dataset[Input Dataset]
+        transformation_ops["Transformation Operations"]
+        metadata["Metadata Specification"]
+
+        transformation_ops_details["• Reprojection
+        • Resampling
+        • Format Conversion
+        • Spatial/Temporal Filtering"]
+    end
+
+    %% ADC Kubernetes Cluster
+    subgraph ADC_K8S["Arctic Data Center Kubernetes Cluster"]
+        %% Storage Components
+        subgraph storage_layer["Storage Layer"]
+            dataone_hash["DataONE Hash Store"]:::storage
+            cephfs[(DataONE Ceph Storage)]:::storage
+            minio["Minio Artifact Storage"]:::storage
+        end
+
+        %% Database Component
+        postgresql[("PostgreSQL")]:::database
+
+        %% OGDC Service Components
+        subgraph OGDC["Open Geospatial Data Cloud (OGDC)"]
+            subgraph ogdc_service["OGDC Service"]
+                ogdc_runner["OGDC Runner"]:::compute
+            end
+            argo_workflows["Argo Workflows"]:::service
+        end
+
+        %% Arctic Data Center
+        ADC_metacat["Arctic Data Center Metacat"]:::service
+    end
+
+    %% Connections
+    external_data --> input_dataset
+    input_dataset --> transformation_ops
+    transformation_ops --> ogdc_runner
+
+    ogdc_runner --> argo_workflows
+    dataone_hash -->|"input dataset"| argo_workflows
+
+    argo_workflows -->|"intermediate data"| minio
+    minio --> dataone_hash
+
+    argo_workflows -->|"publish data"| ADC_metacat
+    ADC_metacat -->|"store data"| dataone_hash
+
+    dataone_hash <-->|"ceph volume pool"| cephfs
+
+    %% PostgreSQL Integration
+    postgresql <-->|"metadata/logging"| ADC_metacat
+
+    %% Legend
+    subgraph legend["Legend"]
+        leg_external["External Data"]:::externalData
+        leg_storage["Storage"]:::storage
+        leg_compute["Compute"]:::compute
+        leg_service["Service"]:::service
+        leg_database["Database"]:::database
+    end
+```
