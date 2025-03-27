@@ -1,0 +1,103 @@
+---
+title: "High-level architecture diagram (V3.3)"
+date: "2025-03-27"
+mermaid:
+  theme: neutral
+---
+
+```{mermaid}
+---
+title: DataONE Open Geospatial Data Cloud (OGDC) Workflow
+---
+flowchart TD
+    %% Color definitions
+    classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
+    classDef storage fill:#E6F3FF,stroke:#1E88E5,color:#000;
+    classDef compute fill:#E8F5E9,stroke:#4CAF50,color:#000;
+    classDef service fill:#FFF3E0,stroke:#FF5722,color:#000;
+    classDef database fill:#F3E5F5,stroke:#9C27B0,color:#000;
+    classDef cli fill:#E0E0E0,stroke:#616161,color:#000;
+    classDef recipe fill:#F1F8E9,stroke:#4CAF50,color:#000;
+
+    %% External Components
+    Users[Users]:::cli
+    Browser[Browser]:::cli
+    ArgoCLI["Argo CLI"]:::cli
+    KubectlCLI["Kubectl CLI"]:::cli
+
+    %% External Data Sources
+    external_data["External Data Sources <br> (e.g., NOAA, NASA, Satellite Imagery)"]:::externalData
+
+    %% OGDC Recipe (Outside K8s Cluster)
+    ogdc_recipe["OGDC Recipe"]:::recipe
+    recipe_details["`defines:
+    * Input data
+    * Transformation operations
+      (e.g., reprojection, subsetting)
+    * Metadata
+      (e.g., citation, etc.)
+    `"]:::recipe
+
+    %% Kubernetes Cluster
+    subgraph K8s_Cluster["Kubernetes Cluster"]
+        K8s_API["K8s API Server"]
+
+        %% Storage and Compute Components
+        subgraph storage_layer["Storage Layer"]
+            dataone_hash["DataONE Hash Store"]:::storage
+            cephfs[(DataONE Ceph Storage)]:::storage
+            minio["Minio Artifact Storage"]:::storage
+        end
+
+        %% Database Component
+        postgresql[("PostgreSQL <br> Metadata & Logging")]:::database
+
+        %% OGDC Service Components
+        subgraph OGDC["Open Geospatial Data Cloud (OGDC)"]
+            ogdc_runner["OGDC Runner"]:::compute
+            argo_workflows["Argo Workflows"]:::service
+        end
+
+        %% Arctic Data Center
+        ADC_metacat["Arctic Data Center Metacat"]:::service
+    end
+
+    %% Connections
+    Users --> Browser
+    Users --> ArgoCLI
+    Users --> KubectlCLI
+    Browser --> K8s_API
+    ArgoCLI --> K8s_API
+    KubectlCLI --> K8s_API
+
+    %% Recipe and Data Flow
+    ogdc_recipe --> ogdc_runner
+    recipe_details --> ogdc_recipe
+
+    external_data -->|"input dataset"| argo_workflows
+
+    ogdc_runner --> argo_workflows
+    dataone_hash -->|"input dataset"| argo_workflows
+
+    argo_workflows -->|"intermediate data"| minio
+    minio --> dataone_hash
+
+    argo_workflows -->|"publish data"| ADC_metacat
+    ADC_metacat -->|"store data"| dataone_hash
+
+    dataone_hash <-->|"ceph volume pool"| cephfs
+
+    postgresql <-->|"metadata/logging"| ADC_metacat
+
+    %% Legend at the bottom
+    subgraph legend["Legend"]
+        direction LR
+        leg_external["External Data"]:::externalData
+        leg_storage["Storage"]:::storage
+        leg_compute["Compute"]:::compute
+        leg_service["Service"]:::service
+        leg_database["Database"]:::database
+        leg_cli["CLI/External Tools"]:::cli
+        leg_recipe["Recipe"]:::recipe
+    end
+```
