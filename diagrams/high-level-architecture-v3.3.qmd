@@ -18,7 +18,6 @@ flowchart TD
     classDef recipe fill:#F1F8E9,stroke:#4CAF50,color:#000;
 
     %% External Components
-    Users[Users]:::cli
     Browser[Browser]:::cli
     ArgoCLI["Argo CLI"]:::cli
     KubectlCLI["Kubectl CLI"]:::cli
@@ -61,9 +60,6 @@ flowchart TD
     end
 
     %% Connections
-    Users --> Browser
-    Users --> ArgoCLI
-    Users --> KubectlCLI
     Browser --> K8s_API
     ArgoCLI --> K8s_API
     KubectlCLI --> K8s_API
