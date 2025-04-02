@@ -26,14 +26,13 @@ flowchart TD
     external_data["External Data Sources <br> (e.g., NOAA, NASA, Satellite Imagery)"]:::externalData
 
     %% OGDC Recipe (Outside K8s Cluster)
-    ogdc_recipe["OGDC Recipe"]:::recipe
-    recipe_details["`defines:
+    ogdc_recipe["OGDC Recipe
+    defines:
     * Input data
     * Transformation operations
       (e.g., reprojection, subsetting)
     * Metadata
-      (e.g., citation, etc.)
-    `"]:::recipe
+      (e.g., citation, etc.)"]:::recipe
 
     %% Kubernetes Cluster
     subgraph K8s_Cluster["Kubernetes Cluster"]
@@ -66,7 +65,6 @@ flowchart TD
 
     %% Recipe and Data Flow
     ogdc_recipe --> ogdc_runner
-    recipe_details --> ogdc_recipe
 
     external_data -->|"input dataset"| argo_workflows
 
