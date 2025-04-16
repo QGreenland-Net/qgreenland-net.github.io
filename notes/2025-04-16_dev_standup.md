@@ -10,7 +10,6 @@ date: "2025-04-16"
 * Rushiraj
 * Alyona
 
-
 ## Activities review
 
 * Updates [name=Rushiraj]
@@ -21,7 +20,7 @@ date: "2025-04-16"
         * Can consult with Matthew if the team is having issues as well
         * probably early next week (won't be in time for the CI review)
 * Updates [name=Robyn]
-    * CI slide deck - call scheduled for tomorrow 
+    * CI slide deck - call scheduled for tomorrow
     * Need to look at rushirajs psql issue
     * may clean up read the docs a little more
 * Updates [name=Alyona]
@@ -31,7 +30,6 @@ date: "2025-04-16"
 ## Discussion
 
 * questions about quarto and why we use it
-
 
 ## Action items
 
