@@ -26,7 +26,7 @@ author:
   </tr>
   <tr>
     <td align="center">
-      <img src="../_images/robyn.jpeg" width="150"><br>
+      <img src="../_images/robyn.jpg" width="150"><br>
       <b>Robyn (NSIDC)</b>
     </td>
     <td align="center">
