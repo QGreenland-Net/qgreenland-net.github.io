@@ -4,7 +4,7 @@ title: "Upcoming Workshops"
 
 ## Educator Workshop
 August 5 & 6, 2025
-[Apply Now]<https://docs.google.com/forms/d/e/1FAIpQLSfJCcijXFS8w8Gm7n026I8ddur4WLqhYvJd4km4FcIv0EbVhA/viewform?usp=dialog>
+[Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSfJCcijXFS8w8Gm7n026I8ddur4WLqhYvJd4km4FcIv0EbVhA/viewform?usp=dialog)
 Deadline to apply July 6th at 11:59pm MT(UTC-06:00)
 
 ### Overview
