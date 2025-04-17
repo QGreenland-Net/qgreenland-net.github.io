@@ -51,21 +51,6 @@ An initiative to manage and process geospatial data effective.
 ![](../_images/ogdc-2.png)
 
 
-## Argo Workflow Engine
-
-![](../_images/ogdc-3.png)
-
-::: {.notes}
-A tool for orchestrating parallel tasks on Kubernetes, facilitating the management of complex workflows.
-:::
-
-## Handling workflows with Argo and K8s
-
-![](../_images/ogdc-4.png)
-
-::: {.notes}
-Integration of Argo with Kubernetes to streamline workflow automation and scalability.
-:::
 
 ## OGDC Architecture
 
@@ -168,6 +153,21 @@ flowchart LR
 Standardized procedures or scripts used within the OGDC to process and analyze geospatial data. Implementation of Argo to define, execute, and monitor workflows within the OGDC framework. Used in the ogdc-runner repository.
 :::
 
+## Argo Workflow Engine
+
+![](../_images/ogdc-3.png)
+
+::: {.notes}
+A tool for orchestrating parallel tasks on Kubernetes, facilitating the management of complex workflows.
+:::
+
+## Handling workflows with Argo and K8s
+
+![](../_images/ogdc-4.png)
+
+::: {.notes}
+Integration of Argo with Kubernetes to streamline workflow automation and scalability.
+:::
 ## Hera Python SDK
 
 ![](../_images/ogdc-8.png)
