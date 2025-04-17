@@ -51,6 +51,10 @@ An initiative to manage and process geospatial data effective.
 ![](../_images/ogdc-2.png)
 
 
+## OGDC Operations
+
+![](../_images/OGDC-11.png)
+
 
 ## OGDC Architecture
 
