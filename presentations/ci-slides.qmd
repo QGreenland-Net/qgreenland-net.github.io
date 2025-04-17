@@ -1,0 +1,195 @@
+---
+title: "QGreenland-Net OGDC Project Overview"
+date: "2025-03-11"
+format: revealjs
+mermaid:
+  theme: neutral
+author:
+  - name: "{{< var people.robyn.name >}}"
+  - name: "{{< var people.rushiraj.name >}}"
+  - name: "{{< var people.alyona.name >}}"
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
+---
+
+
+## Meet the team
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="../_images/alyona.png" width="150"><br>
+      <b>Alyona</b>
+    </td>
+    <td align="center">
+      <img src="../_images/rushiraj.png" width="150"><br>
+      <b>Rushiraj</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../_images/robyn.jpg" width="150"><br>
+      <b>Robyn (NSIDC)</b>
+    </td>
+    <td align="center">
+      <img src="../_images/TreyStafford.jpeg" width="150"><br>
+      <b>Trey (NSIDC)</b>
+    </td>
+  </tr>
+</table>
+
+## Open Geospatioal Data Cloud
+
+![](../_images/ogdc-chart1.png)
+
+::: {.notes}
+An initiative to manage and process geospatial data effective.
+:::
+
+## High Level OGDC Overview
+
+![](../_images/ogdc-2.png)
+
+
+## Argo Workflow Engine
+
+![](../_images/ogdc-3.png)
+
+::: {.notes}
+A tool for orchestrating parallel tasks on Kubernetes, facilitating the management of complex workflows.
+:::
+
+## Handling workflows with Argo and K8s
+
+![](../_images/ogdc-4.png)
+
+::: {.notes}
+Integration of Argo with Kubernetes to streamline workflow automation and scalability.
+:::
+
+## OGDC Architecture
+
+::: {layout-ncol=1}
+```{mermaid}
+flowchart TD
+    %% Color definitions
+    classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
+    classDef storage fill:#E6F3FF,stroke:#1E88E5,color:#000;
+    classDef compute fill:#E8F5E9,stroke:#4CAF50,color:#000;
+    classDef service fill:#FFF3E0,stroke:#FF5722,color:#000;
+    classDef database fill:#F3E5F5,stroke:#9C27B0,color:#000;
+    classDef cli fill:#E0E0E0,stroke:#616161,color:#000;
+    classDef recipe fill:#F1F8E9,stroke:#4CAF50,color:#000;
+
+    %% External Components
+    Browser[Browser]:::cli
+    ArgoCLI["Argo CLI"]:::cli
+    KubectlCLI["Kubectl CLI"]:::cli
+
+    %% External Data Sources
+    external_data["External Data Sources <br> (e.g., NOAA, NASA, Satellite Imagery)"]:::externalData
+
+    %% OGDC Recipe (Outside K8s Cluster)
+    ogdc_recipe["OGDC Recipe
+    defines:
+    * Input data
+    * Transformation operations
+      (e.g., reprojection, subsetting)
+    * Metadata
+      (e.g., citation, etc.)"]:::recipe
+
+    %% Kubernetes Cluster
+    subgraph K8s_Cluster["Kubernetes Cluster"]
+        K8s_API["K8s API Server"]
+
+        %% Storage and Compute Components
+        subgraph storage_layer["Storage Layer"]
+            dataone_hash["DataONE Hash Store"]:::storage
+            cephfs[(DataONE Ceph Storage)]:::storage
+            minio["Minio Artifact Storage"]:::storage
+        end
+
+        %% Database Component
+        postgresql[("PostgreSQL <br> Metadata & Logging")]:::database
+
+        %% OGDC Service Components
+        subgraph OGDC["Open Geospatial Data Cloud (OGDC)"]
+            ogdc_runner["OGDC Runner"]:::compute
+            argo_workflows["Argo Workflows"]:::service
+        end
+
+        %% Arctic Data Center
+        ADC_metacat["Arctic Data Center Metacat"]:::service
+    end
+
+    %% Connections
+    Browser --> K8s_API
+    ArgoCLI --> K8s_API
+    KubectlCLI --> K8s_API
+
+    %% Recipe and Data Flow
+    ogdc_recipe --> ogdc_runner
+
+    external_data -->|"input dataset"| argo_workflows
+
+    ogdc_runner --> argo_workflows
+    dataone_hash -->|"input dataset"| argo_workflows
+
+    argo_workflows -->|"intermediate data"| minio
+    minio --> dataone_hash
+
+    argo_workflows -->|"publish data"| ADC_metacat
+    ADC_metacat -->|"store data"| dataone_hash
+
+    dataone_hash <-->|"ceph volume pool"| cephfs
+
+    postgresql <-->|"metadata/logging"| ADC_metacat
+```
+
+```{mermaid}
+flowchart LR
+    %% Color definitions
+    classDef externalData fill:#FFE5B4,stroke:#FF9800,color:#000;
+    classDef storage fill:#E6F3FF,stroke:#1E88E5,color:#000;
+    classDef compute fill:#E8F5E9,stroke:#4CAF50,color:#000;
+    classDef service fill:#FFF3E0,stroke:#FF5722,color:#000;
+    classDef database fill:#F3E5F5,stroke:#9C27B0,color:#000;
+    classDef cli fill:#E0E0E0,stroke:#616161,color:#000;
+    classDef recipe fill:#F1F8E9,stroke:#4CAF50,color:#000;
+
+    leg_external["External Data"]:::externalData ~~~ leg_storage["Storage"]:::storage ~~~ leg_compute["Compute"]:::compute ~~~ leg_service["Service"]:::service ~~~ leg_database["Database"]:::database ~~~ leg_cli["CLI/External Tools"]:::cli ~~~ leg_recipe["Recipe"]:::recipe
+```
+
+## OGDC Recipes
+
+![](../_images/ogdc-6.png)
+
+::: {.notes}
+Standardized procedures or scripts used within the OGDC to process and analyze geospatial data.
+:::
+
+## Worfkflows with Argo
+
+![](../_images/ogdc-7.png)
+
+::: {.notes}
+Implementation of Argo to define, execute, and monitor workflows within the OGDC framework. Used in the ogdc-runner repository.
+:::
+
+## Hera Python SDK
+
+![](../_images/ogdc-8.png)
+
+::: {.notes}
+A Python Software Development Kit designed to interact with Argo Workflows, simplifying the creation and management of workflows programmatically.
+:::
+
+## Scaling Viz workflow
+
+![](../_images/ogdc-9.png)
+
+## Tiling Workflow
+
+![](../_images/ogdc-10.png)
+
+## Thank you!
