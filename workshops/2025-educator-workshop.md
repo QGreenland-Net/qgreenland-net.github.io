@@ -16,7 +16,7 @@ $250 stipend for successful completion of workshop
 Authorship of curriculum resources available on the QGreenland Webpage
 Build a network of educators
 
-###Is this workshop for me?
+### Is this workshop for me?
 
 Are you an undergraduate or graduate educator who is interested in using authentic data in class? Do you have lessons or resources you want to adapt where GIS data could enhance student learning and outcomes?
 If you answer to these questions is yes, than this workshop is for YOU!
