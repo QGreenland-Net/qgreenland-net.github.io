@@ -148,6 +148,7 @@ flowchart LR
 
     leg_external["External Data"]:::externalData ~~~ leg_storage["Storage"]:::storage ~~~ leg_compute["Compute"]:::compute ~~~ leg_service["Service"]:::service ~~~ leg_database["Database"]:::database ~~~ leg_cli["CLI/External Tools"]:::cli ~~~ leg_recipe["Recipe"]:::recipe
 ```
+:::
 
 ## OGDC Recipes
 
