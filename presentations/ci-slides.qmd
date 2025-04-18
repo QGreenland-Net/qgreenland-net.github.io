@@ -44,7 +44,11 @@ author:
 ![](../_images/ogdc-chart1.png)
 
 ::: {.notes}
-An initiative to manage and process geospatial data effective.
+We envision the OGDC being at the center of multiple overlapping interests in cryospheric data management and analysis.
+
+OGDC strives to provide a robust and reproducible interface for transforming, visualizing, and publishing geospatial data, serving QGreenland, the ADC, and various other research interests, including the public.
+
+The CI coordinating group is one of a few curated expert groups that the QGreenland-Net team is working with to ensure that the OGDC aligns with community needs.
 :::
 
 ## High Level OGDC Overview
@@ -52,9 +56,30 @@ An initiative to manage and process geospatial data effective.
 ![](../_images/ogdc-2.png)
 
 
+::: {.notes}
+Our vision for the OGDC, as presented in the QGreenland-Net proposal.
+
+The OGDC will provide an open and reproducible system for performing geospatial
+data transformations on data within the DataONE network. We are leverage
+existing networks like DataONE, NSIDC, Arctic Data Center, and PANGAEA.
+
+Users of the OGDC are diverse and include QGreenland, ADC data portals, and
+public users/scientists.
+:::
+
+
 ## OGDC Operations
 
 ![](../_images/ogdc-11.png)
+
+
+::: {.notes}
+OGDC operations focus on geospatial data transformations to support data
+analysis and visualization.
+
+Examples of operations are featured here. We'll highlight a concrete example in
+the remainder of the presentation.
+:::
 
 ## OGDC Example
 
@@ -78,9 +103,13 @@ The primary data file is a `.csv` with no spatial metadata:
 ::: {.notes}
 The seal tags dataset is a CSV file with one record per seal.
 
-This dataset is a good example of a simple one-step operation to take a non-geospatial ready data file and make it ready for analysis in QGreenland.
+This dataset is a good example of a simple one-step operation to take a
+non-geospatial ready data file and make it ready for analysis in QGreenland.
 
-The data is in CSV, and uses  geographic coordinates (EPSPG:4326). The QGreenland project makes all included data consistently in the Polar Stereographic North (EPSG:3413) projection and strives to include all vector datasets as a geopackage (gpkg).
+The data is in CSV, and uses geographic coordinates (EPSPG:4326). The QGreenland
+project makes all included data consistently in the Polar Stereographic North
+(EPSG:3413) projection and strives to include all vector datasets as a
+geopackage (gpkg).
 
 This can be accomplished through a single `ogr2ogr` command.
 :::
@@ -100,7 +129,8 @@ ogr2ogr \
 
 ::: {.notes}
 To make the seal-tags dataset analysis-ready for QGreenland, we need to convert
-to .gpkg and reproject to EPSG:3413.
+to .gpkg and reproject to EPSG:3413. A single `ogr2ogr` command is sufficient to
+achieve this, but other examples may be much more complex.
 :::
 
 
@@ -117,16 +147,13 @@ to .gpkg and reproject to EPSG:3413.
 * A reusable mechanism for expressing what transformations are applied to a dataset
   * Recipes
 * Open-source focus.
-  * GitHub hosted code and recipes
+  * GitHub hosted code, documentation, and recipes
 :::
 
 :::{.notes}
 The seal-tags example is a simple, one-step case. But we anticipate more complex
 use-cases where there are many transformation operations distributed across
 compute resources in a parallel fashion.
-
-Also consider:
-* Mechanism for triggering recipe builds via GitHub
 :::
 
 
@@ -134,12 +161,16 @@ Also consider:
 
 ![](../_images/architecture-diagram.jpg)
 
-## OGDC Recipes
+:::{.notes}
+Trey takes over here.
 
-![](../_images/ogdc-6.png)
+The QGreenland-Net development team has been working on the technical details of the OGDC, which is broadly captured by this architecture diagram.
 
-::: {.notes}
-Standardized procedures or scripts used within the OGDC to process and analyze geospatial data. Implementation of Argo to define, execute, and monitor workflows within the OGDC framework. Used in the ogdc-runner repository.
+The OGDC architecture we are working on will automate geospatial data processing using robust open source tools deployed to a cloud-based environment, stores datasets in scalable storage, and publishes metadata via Arctic Data Center, enabling seamless access through APIs and CLI tools.
+
+We have been focused on developing the components responsible for performing user transformation requests (e.g., reprojection, subsetting, etc.) within the ADC’s cloud. Notable milestones include choosing core technologies, deploying initial prototypes, and successfully transforming data.
+
+Next steps will include integrating with DataONE to support publishing outputs.
 :::
 
 ## Example Recipe
@@ -169,6 +200,11 @@ ogr2ogr \
 
 ![](../_images/architecture-diagram.jpg)
 
+:::{.notes}
+Highlight recipe -> OGDC runner phase. How do we transform a recipe like we saw
+in the previous example into something that's executable in kubernetes?
+:::
+
 ## OGDC-runner
 
 * Responsible for transforming a recipe into an Argo workflow that
@@ -185,6 +221,8 @@ A Python Software Development Kit designed to interact with Argo Workflows, simp
 ![](../_images/ogdc-3.png)
 
 ::: {.notes}
+Rushiraj takes over on this slide.
+
 A tool for orchestrating parallel tasks on Kubernetes, facilitating the management of complex workflows.
 :::
 
@@ -199,6 +237,15 @@ Integration of Argo with Kubernetes to streamline workflow automation and scalab
 ## Seal-tag Argo Workflow
 
 ![](../_images/ogdc-12.png)
+
+::: {.notes}
+Revisiting our seal-tags example.
+
+* Argo Dashboard shows workflow with intermediate outputs and final data
+  publication step.
+* The result is a `.gpkg` that GIS programs can understand. `ogrinfo` shows
+  valid spatial metadata is present.
+:::
 
 ## Scaling Viz workflow
 
