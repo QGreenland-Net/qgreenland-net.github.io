@@ -189,8 +189,7 @@ Integration of Argo with Kubernetes to streamline workflow automation and scalab
 
 ## Seal-tag Argo Workflow
 
-TODO: insert image showing argo workflow viz for seal-tags
-TODO: [optional], show `ogrinfo` output on resulting .gpkg
+![](../_images/ogdc-12.png)
 
 ## Scaling Viz workflow
 
