@@ -174,7 +174,7 @@ ogr2ogr -lco ENCODING=UTF-8 -t_srs "EPSG:3413" -makevalid -s_srs "EPSG:4326" -oo
 A Python Software Development Kit designed to interact with Argo Workflows, simplifying the creation and management of workflows programmatically.
 :::
 
-## Argo Workflow Engine
+## Argo Workflow
 
 ![](../_images/ogdc-3.png)
 
