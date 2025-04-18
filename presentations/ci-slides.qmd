@@ -165,12 +165,10 @@ ogr2ogr -lco ENCODING=UTF-8 -t_srs "EPSG:3413" -makevalid -s_srs "EPSG:4326" -oo
 * Responsible for transforming a recipe into an Argo workflow that
 * Python-based. Utilizes the Hera Python SDK for programatically constructing Argo workflows.
 
-![](../_images/ogdc-8.png)
+![](../_images/ogdc-runner.jpg)
 
 ::: {.notes}
 A Python Software Development Kit designed to interact with Argo Workflows, simplifying the creation and management of workflows programmatically.
-
-TODO: reverse arrow in image
 :::
 
 ## Argo Workflow Engine
