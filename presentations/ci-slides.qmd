@@ -76,7 +76,7 @@ The primary data file is a `.csv` with no spatial metadata:
 ```
 
 ::: {.notes}
-The (TODO: insert actual title) seal tags dataset is a CSV file with one record per seal.
+The seal tags dataset is a CSV file with one record per seal.
 
 This dataset is a good example of a simple one-step operation to take a non-geospatial ready data file and make it ready for analysis in QGreenland.
 
