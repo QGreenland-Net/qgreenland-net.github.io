@@ -1,7 +1,7 @@
 ---
 title: "2025 Educator Workshop"
 ---
-August 5-7th, 2025 
+August 5-7th, 2025
 [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSfJCcijXFS8w8Gm7n026I8ddur4WLqhYvJd4km4FcIv0EbVhA/viewform?usp=dialog)
 Deadline to apply is July 6th at 11:59pm MT(UTC-06:00
 
@@ -20,6 +20,6 @@ If you answer to these questions is yes, than this workshop is for YOU!
 
 ## Application details
 [Application Form](https://docs.google.com/forms/d/e/1FAIpQLSfJCcijXFS8w8Gm7n026I8ddur4WLqhYvJd4km4FcIv0EbVhA/viewform?usp=dialog)
-Deadline to apply July 6th at 11:59pm MT(UTC-06:00) 
-Decisions will be made the week of July 14th 
+Deadline to apply July 6th at 11:59pm MT(UTC-06:00)
+Decisions will be made the week of July 14th
 Questions? Please reach out to alyse.thurber(at)colorado.edu
