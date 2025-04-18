@@ -106,6 +106,8 @@ to .gpkg and reproject to EPSG:3413.
 
 ## How?
 
+
+::: {.r-fit-text}
 * Cloud-based distributed computing environment
   * Kubernetes
 * Workflow management technology
@@ -116,6 +118,7 @@ to .gpkg and reproject to EPSG:3413.
   * Recipes
 * Open-source focus.
   * GitHub hosted code and recipes
+:::
 
 :::{.notes}
 The seal-tags example is a simple, one-step case. But we anticipate more complex
