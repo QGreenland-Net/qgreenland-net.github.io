@@ -204,8 +204,11 @@ Integration of Argo with Kubernetes to streamline workflow automation and scalab
 
 ## References
 
-TODO: add references to dev site and GitHub spaces of interest (e.g., with QR
-code)
+* [QGreenland-Net Dev Site](https://qgreenland-net.github.io/)
+* [QGreenladn-Net GitHub](https://github.com/QGreenland-Net/)
+  * [ogdc-runner](https://github.com/QGreenland-Net/ogdc-runner/)
+  * [ogdc-helm](https://github.com/QGreenland-Net/ogdc-helm/)
+
 
 
 ## Thank you!
