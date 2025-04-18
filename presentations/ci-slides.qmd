@@ -258,7 +258,7 @@ Revisiting our seal-tags example.
 ## References
 
 * [QGreenland-Net Dev Site](https://qgreenland-net.github.io/)
-* [QGreenladn-Net GitHub](https://github.com/QGreenland-Net/)
+* [QGreenland-Net GitHub](https://github.com/QGreenland-Net/)
   * [ogdc-runner](https://github.com/QGreenland-Net/ogdc-runner/)
   * [ogdc-helm](https://github.com/QGreenland-Net/ogdc-helm/)
 
