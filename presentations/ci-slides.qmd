@@ -156,7 +156,13 @@ inputs:
 
 `recipe.sh` is a bash file that lists a sequence of operations to transform the dataset.
 ```bash
-ogr2ogr -lco ENCODING=UTF-8 -t_srs "EPSG:3413" -makevalid -s_srs "EPSG:4326" -oo X_POSSIBLE_NAMES=Longitude -oo Y_POSSIBLE_NAMES=Latitude /output_dir/ct71_ODV_epsg3413.gpkg /input_dir/ct71_ODV.csv
+ogr2ogr \
+  -lco ENCODING=UTF-8 \
+  -makevalid \
+  -s_srs "EPSG:4326" \
+  -t_srs "EPSG:3413" \
+  -oo X_POSSIBLE_NAMES=Longitude -oo Y_POSSIBLE_NAMES=Latitude \
+  /output_dir/ct71_ODV_epsg3413.gpkg /input_dir/ct71_ODV.csv
 ```
 
 ## OGDC Architecture
