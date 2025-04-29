@@ -10,7 +10,7 @@ Do you want to engage your students with real-world data and build skills they c
 
 ## Benefits of Participation
 * Basic knowledge of how to navigate QGIS and perform basic GIS analysis
-* $250 stipend for successful completion of workshop
+* $200 stipend for successful completion of workshop
 * Authorship of curriculum resources available on the QGreenland Webpage
 * Build a network of educators
 
