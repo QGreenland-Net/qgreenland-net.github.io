@@ -1,7 +1,8 @@
 ci:
   autoupdate_schedule: "monthly"
   autoupdate_commit_msg: "chore: update pre-commit hooks"
-  autofix_prs: false # Comment "pre-commit.ci autofix" on a PR to trigger
+  autofix_prs: true # Comment "pre-commit.ci autofix" on a PR to trigger
+  autofix_commit_msg: '[pre-commit.ci] Apply automatic fixes'
 
 repos:
   - repo: "https://github.com/pre-commit/pre-commit-hooks"
