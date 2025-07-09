@@ -5,7 +5,7 @@ August 5-7th, 2025
 
 [Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSfJCcijXFS8w8Gm7n026I8ddur4WLqhYvJd4km4FcIv0EbVhA/viewform?usp=dialog)
 
-Deadline to apply is July 6th at 11:59pm MT(UTC-06:00)
+Deadline extended to July 14th at 11:59pm MT(UTC-06:00)
 
 ## Overview
 Do you want to engage your students with real-world data and build skills they can use in their careers? Do you want to use and teach GIS in your classroom? QGreenland invites educators to a dedicated workshop to develop learning resources using QGreenland data. The workshop will bring together instructors across disciplines to create and adapt learning resources that use Greenland-focused data. The workshop will include training on how to perform basic analyses in QGIS, research-based pedagogical approaches, and how to find additional data for use with QGreenland. This workshop is best suited for formal undergraduate or graduate educators. Familiarity with QGIS is not required.
@@ -22,6 +22,6 @@ If you answer to these questions is yes, than this workshop is for YOU!
 
 ## Application details
 [Application Form](https://docs.google.com/forms/d/e/1FAIpQLSfJCcijXFS8w8Gm7n026I8ddur4WLqhYvJd4km4FcIv0EbVhA/viewform?usp=dialog)
-Deadline to apply July 6th at 11:59pm MT(UTC-06:00)
-Decisions will be made the week of July 14th
+Deadline to apply July 14th at 11:59pm MT(UTC-06:00)
+Decisions will communnicated by July 18th
 Questions? Please reach out to alyse.thurber(at)colorado.edu
