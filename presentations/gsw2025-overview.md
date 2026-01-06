@@ -26,8 +26,9 @@ author:
 
 * Greenland Science Week is every ~2 years. This is year 2 of our 3-year
   project.
-* Getting the word out about our project.
-* Opportunity to engage with stakeholders directly.
+* Getting the word out about our project (e.g,. via [informative
+  postcards](https://qgreenland.org/sites/default/files/2025-12/QGreenland%20DataONE%20postcards.pdf))
+* Opportunity to engage with stakeholders and others involved with Greenland-focused science directly.
 * Listening/Learning!
 
 ## QGreenland-Net Team In Greenland
