@@ -39,12 +39,6 @@ author:
 * Ian Nesbitt of NCEAS attended as a data repository expert.
 
 
-::: {.notes}
-Twila also presented a talk on work she has done with summer schools in
-Greenland.
-:::
-
-
 ## Greenland Science Week
 
 * Cryosphere side-meeting Monday 10th.
@@ -61,3 +55,12 @@ Greenland.
 * Trey also attended a few events while in Ilulissat on vacation!
 
 ![](https://trey-stafford.github.io/images/ILLU.jpg){fig-align="center"}
+
+## Conference Nov. 12-13
+
+* Robyn M. presented a [poster about
+  QGreenland-Net](https://qgreenland.org/sites/default/files/2025-12/gsw-poster-2025_small.pdf).
+* Ian N. presented [a talk about federated data
+  repositories and the QGreenland-Net project](https://drive.google.com/file/d/1sNAvMQg-hLpiicpnBDeSluxqIJA2EoWz/view)
+* Twila M. presented a talk about some of her work with summer schools in
+  Greenland.
