@@ -92,10 +92,29 @@ TODO: consider more in-depth info?
 * Twila M. presented a talk about some of her work with summer schools in
   Greenland.
 
+::: {.notes}
+The conference itself was held in the culture center in Nuuk. It was a large
+conference (#attendees?) that covered a huge range of topics related to science
+in Greenland. There were many people who studied snow/ice, but also ecosystems,
+biochemistry, climate modeling, astronomy, etc.
+
+The conference took place over two days. There were two concurrent rooms with
+talks - our team attended both to ensure we heard about everything!
+:::
 
 ## Meeting at Asiaq Nov. 14
 
-TODO
+Met with stakeholders from Asiaq and GINR to discuss QGreenland-Net activities
+and priorities. We also received updates from Asiaq and GINR and talked about
+ways we could collaborate moving forward.
+
+:::{.notes}
+* Asiaq focuses on towns/settlements. New data updates related to Nuuk and
+  Sisimiut expected in early 2026.
+* Idea to create a strategy document about DataONE/QGreenland-Net ecosystem and
+  how Asiaq could fit into that.
+* Updates to NunaGIS and NatureMap
+:::
 
 ## Qaagitsi Nov. 14
 
