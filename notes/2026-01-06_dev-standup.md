@@ -11,19 +11,6 @@ date: "2026-01-06"
 
 
 
-## Activities review
-
-* One person leads taking notes (rotate!) but everyone helps out.
-  * Replace these bullets with notes as you go!
-* One person shares screen (rotate!)
-* Review columns right-to-left:
-  * What is newly completed?
-  * What is waiting for review?
-  * What is currently being worked on?
-  * What will we work on next?
-
-
-
 ## Discussion
 
 * [name=Rushiraj]
@@ -40,3 +27,4 @@ date: "2026-01-06"
     * Plan to pair on #70 tomorrow
 * [name=Trey]
     * Working on GSW lunchtime presentation.
+    * Create issue for adding support for authenticating w/ ADC's keycloak (created here: Add support for authenticating w/ ADC keycloak [ogdc-runner#142](https://github.com/QGreenland-Net/ogdc-runner/issues/142))
