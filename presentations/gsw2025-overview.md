@@ -35,9 +35,8 @@ author:
 * Trey Stafford and Robyn Marowitz of NSIDC attended as software developers
 * Twila Moon of NSIDC attended as PI.
 * Angie Garcia of the National Center for Ecological Analysis and Synthesis
-  (NCEAS)/Actic Data Center (ADC) attended as a community engagement/outreach
-  coordinator.
-* Ian Nesbitt of NCEAS/ADC attended as a data repository expert.
+  (NCEAS) attended as a community engagement/outreach coordinator.
+* Ian Nesbitt of NCEAS attended as a data repository expert.
 
 
 ::: {.notes}
