@@ -57,6 +57,17 @@ author:
 
 ![](https://trey-stafford.github.io/images/ILLU.jpg){fig-align="center"}
 
+## Cryosphere side-meeting Nov. 10
+
+* Held at the Nuuk High School and included students.
+* Hands-on component included samples from icebergs and a VR experience.
+* Talks included information about Students on Ice (SOI) and research
+  being done at GEUS about Ice Marginal Lakes.
+
+## Marine Research Seminar Nov. 11
+
+TODO
+
 ## Conference Nov. 12-13
 
 * Robyn M. presented a [poster about
@@ -65,3 +76,38 @@ author:
   repositories and the QGreenland-Net project](https://drive.google.com/file/d/1sNAvMQg-hLpiicpnBDeSluxqIJA2EoWz/view)
 * Twila M. presented a talk about some of her work with summer schools in
   Greenland.
+
+
+## Meeting at Asiaq Nov. 14
+
+TODO
+
+## Qaagitsi Nov. 14
+
+![](https://trey-stafford.github.io/images/qaagitsi.jpg){fig-align="center"}
+
+## Excursion Nov. 15
+
+:::: {layout-ncol=3 layout-valign="center"}
+![](https://trey-stafford.github.io/images/spool_iceberg.jpg)
+
+![](https://trey-stafford.github.io/images/fishing_boat.jpg)
+
+![](https://trey-stafford.github.io/images/fjord_fishing_food.jpg)
+::::
+
+
+::: {.notes}
+Robyn M., Trey S., Angie G., and Ian N. did a fishing excursion together with
+Nuuk Water Taxi on Saturday after GSW. We caught many Arctic Cod and enjoyed a
+meal prepared with our catch afterwards!
+:::
+
+
+## Key takeaways/Common themes
+
+* [International Polar Year 5 (IPY-5)](https://ipy5.info/) (2032-2033) planning
+  is underway. Calls for project endorsements expected in early 2026.
+* Concerns about US-based projects and funding ending abruptly. Importance of
+  communicating "evergreen" project artifacts.
+* Difficulties with science funding are wider than just the U.S..
