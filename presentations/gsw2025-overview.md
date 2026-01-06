@@ -66,7 +66,22 @@ author:
 
 ## Marine Research Seminar Nov. 11
 
-TODO
+Topics of talks included:
+
+* Marine food webs and physical/human interactions.
+* Upcoming research expeditions.
+* Monitoring programs.
+* Tourism and cruise ship industry.
+
+::: {.notes}
+There was a lot of ground covered in this day, and the topics above are a
+sampling.
+
+In addition to talks and discussion, lunch was provided. Lunch was a nice
+opportunity to talk with people directly!
+
+TODO: consider more in-depth info?
+:::
 
 ## Conference Nov. 12-13
 
