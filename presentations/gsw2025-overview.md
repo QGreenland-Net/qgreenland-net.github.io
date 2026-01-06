@@ -111,3 +111,4 @@ meal prepared with our catch afterwards!
 * Concerns about US-based projects and funding ending abruptly. Importance of
   communicating "evergreen" project artifacts.
 * Difficulties with science funding are wider than just the U.S..
+* ArcGIS StoryMaps are a commonly used tool for science communication.
