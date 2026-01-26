@@ -42,12 +42,21 @@ author:
 
 ## Greenland Science Week
 
-* Cryosphere side-meeting Monday 10th.
-* Marine Research Seminar Tues. 11th.
-* [GSW Conference](https://www.scienceweek.gl/program) Wed. 12th - Thurs. 13th.
-* Stakeholder meeting at [Asiaq](https://www.asiaq.gl/en/) Fri. 14th.
-* [Qaagitsi](https://arctichub.gl/activities/qaagitsi-greenland-science-week-2025/) Public Science Festival Fri. 14th.
-* "Team building" excursion Sat. 15th.
+```{mermaid}
+---
+config:
+  theme: 'default'
+  timeline:
+    disableMulticolor: true
+---
+timeline
+    Mon. 10th: Cryosphere side-meeting
+    Tues. 11th : Marine Research Seminar
+    Wed. 12th - Thurs. 13th : GSW Conference
+    Fri. 14th : Stakeholder meeting at Asiaq
+              : Qaagitsi Public Science Festival
+    Sat. 15th : "Team building" excursion
+```
 
 
 ## Ilulissat Science Forum Nov. 3-9
