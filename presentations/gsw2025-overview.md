@@ -1,6 +1,6 @@
 ---
 title: "Greenland Science Week (GSW) 2025 overview"
-date: "2025-01-21"
+date: "2026-01-28"
 format: revealjs
 author:
   - name: "{{< var people.trey.name >}}"
