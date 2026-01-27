@@ -94,17 +94,25 @@ author:
 ```{mermaid}
 ---
 config:
-  theme: 'default'
+  theme: 'base'
   timeline:
     disableMulticolor: true
 ---
 timeline
-    Mon. 10th: Cryosphere side-meeting
-    Tues. 11th : Marine Research Seminar
-    Wed. 12th - Thurs. 13th : GSW Conference
-    Fri. 14th : Stakeholder meeting at Asiaq
-              : Qaagitsi Public Science Festival
-    Sat. 15th : "Team building" excursion
+    section Pre-conference
+        Mon. 10th: Cryosphere side-meeting
+        Tues. 11th : Marine Research Seminar
+                   : Conference reception
+    section GSW conference
+        Wed. 12th: Plenary sessions and talks
+                 : Poster session
+                 : Conference dinner
+        Thurs. 13th: Plenary sessions and talks
+                   : Ian & Twila presentations
+    section Post-conference
+        Fri. 14th : Stakeholder meeting at Asiaq
+                : Qaagitsi Public Science Festival
+        Sat. 15th : "Team building" excursion
 ```
 
 
