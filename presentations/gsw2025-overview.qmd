@@ -1,7 +1,14 @@
 ---
-title: "Greenland Science Week (GSW) 2025 overview"
+title: "Greenland Science Week (GSW) 2025 Recap"
 date: "2026-01-28"
-format: revealjs
+background-image: "https://github.com/trey-stafford/trey-stafford.github.io/blob/main/content/images/ice_zoom.jpg?raw=true"
+title-slide-attributes:
+  data-background-image: "https://github.com/trey-stafford/trey-stafford.github.io/blob/main/content/images/ice_zoom.jpg?raw=true"
+  data-background-opacity: "0.75"
+format:
+  revealjs:
+    theme: default
+
 author:
   - name: "{{< var people.trey.name >}}"
     orcid: "{{< var people.trey.orcid >}}"
@@ -15,29 +22,63 @@ author:
     orcid: "{{< var people.angie.orcid >}}"
 ---
 
-## GSW overview
+<style>
+.reveal a {
+  color: #D00C33;
+}
+.reveal a:hover {
+  color: #FFFFFF;
+}
 
-* Events held across Greenland Nov. 7-14.
-* QGreenland-Net team in Nuuk Nov. 9-16.
 
-![](https://trey-stafford.github.io/images/greenland_science_week_conf.jpg){fig-align="center"}
+.light-background {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+</style>
+
+## Outline
+:::{.light-background}
+
+* Context: why, when, who, where?
+* Breakdown of GSW
+* Key takeaways/conclusions
+* Opportunity for questions
+:::
+
 
 ## Why Greenland in 2025?
 
+:::{.light-background}
 * Greenland Science Week is every ~2 years. This is year 2 of our 3-year
   project.
+  * Events held across Greenland Nov. 7-14.
+  * QGreenland-Net team in Nuuk Nov. 9-16.
+* Opportunity to engage with collaborators and others involved with Greenland-focused science directly.
+* Listening/Learning!
 * Getting the word out about our project (e.g,. via [informative
   postcards](https://qgreenland.org/sites/default/files/2025-12/QGreenland%20DataONE%20postcards.pdf))
-* Opportunity to engage with stakeholders and others involved with Greenland-focused science directly.
-* Listening/Learning!
+:::
+
+---
+
+
+![](../_images/qgreenland_postcards.jpg){fig-align="center"}
+
+---
+
+![](../_images/dataone_postcards.jpg){fig-align="center"}
 
 ## QGreenland-Net Team In Greenland
 
+:::{.light-background}
 * Trey Stafford and Robyn Marowitz of NSIDC attended as software developers
 * Twila Moon of NSIDC attended as PI.
 * Angie Garcia of the National Center for Ecological Analysis and Synthesis
   (NCEAS) attended as a community engagement/outreach coordinator.
 * Ian Nesbitt of NCEAS attended as a data repository expert.
+:::
 
 
 ## Getting to Greenland
@@ -58,11 +99,15 @@ author:
 
 ## Nuuk
 
-![](https://trey-stafford.github.io/images/kobenhavner.jpg){fig-align="center"}
+:::{.columns}
+::::{.column}
+![](https://trey-stafford.github.io/images/kobenhavner.jpg){fig-align="center" width="85%"}
+::::
 
----
-
-![](https://trey-stafford.github.io/images/foot_on_ice.jpg){fig-align="center"}
+::::{.column}
+![](https://trey-stafford.github.io/images/foot_on_ice.jpg){fig-align="center" width="85%"}
+::::
+:::
 
 ---
 
@@ -70,17 +115,12 @@ author:
 
 ---
 
-![](https://trey-stafford.github.io/images/sunset.jpg){fig-align="center"}
-
----
-
-![](https://trey-stafford.github.io/images/stairs_in_nuuk.jpg){fig-align="center"}
-
----
-
 ![](https://trey-stafford.github.io/images/icebergs_nuuk_20251114.jpg){fig-align="center"}
 
+
+
 ---
+
 
 ![](https://trey-stafford.github.io/images/first_sea_iceberg.jpg){fig-align="center"}
 
@@ -88,8 +128,18 @@ author:
 
 ![](https://trey-stafford.github.io/images/iceberg_zoom.jpg){fig-align="center"}
 
+---
+
+![](https://trey-stafford.github.io/images/stairs_in_nuuk.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/sunset.jpg){fig-align="center"}
+
 
 ## Greenland Science Week
+
+:::{.light-background}
 
 ```{mermaid}
 ---
@@ -100,8 +150,11 @@ config:
 ---
 timeline
     section Pre-conference
+        Mon. 3-9: Ilulissat Science Forum
+                : Trey's vacation!
         Mon. 10th: Cryosphere side-meeting
         Tues. 11th : Marine Research Seminar
+                   : Icelink meeting
                    : Conference reception
     section GSW conference
         Wed. 12th: Plenary sessions and talks
@@ -110,35 +163,55 @@ timeline
         Thurs. 13th: Plenary sessions and talks
                    : Ian & Twila presentations
     section Post-conference
-        Fri. 14th : Stakeholder meeting at Asiaq
+        Fri. 14th : Collaborators meeting at Asiaq
                 : Qaagitsi Public Science Festival
         Sat. 15th : "Team building" excursion
 ```
+:::
 
 
 ## Ilulissat Science Forum Nov. 3-9
 
+
+:::{.light-background}
+
+::: {.r-fit-text}
 * Twila served as a moderator for a discussion about local impacts of climate change.
 * Trey also attended a few events while in Ilulissat on vacation!
+:::
+:::
 
 ![](https://trey-stafford.github.io/images/ILLU.jpg){fig-align="center"}
 
 
 ## Cryosphere side-meeting Nov. 10
 
+:::{.light-background}
+
+::: {.r-fit-text}
 * Held at the Nuuk High School and included students.
 * Hands-on component included samples from icebergs and a VR experience.
 * Talks included information about Students on Ice (SOI) and research
   being done at GEUS about Ice Marginal Lakes.
+:::
+
+:::
+
+![](https://trey-stafford.github.io/images/hotel_aurora_aurora.jpg){fig-align="center"}
 
 ## Marine Research Seminar Nov. 11
+
+:::{.light-background}
 
 Topics of talks included:
 
 * Marine food webs and physical/human interactions.
+* Ice-ocean interactions
 * Upcoming research expeditions.
 * Monitoring programs.
 * Tourism and cruise ship industry.
+
+:::
 
 ::: {.notes}
 There was a lot of ground covered in this day, and the topics above are a
@@ -146,18 +219,27 @@ sampling.
 
 In addition to talks and discussion, lunch was provided. Lunch was a nice
 opportunity to talk with people directly!
-
-TODO: consider more in-depth info?
 :::
 
-## Conference Nov. 12-13
 
-* Robyn M. presented a [poster about
-  QGreenland-Net](https://qgreenland.org/sites/default/files/2025-12/gsw-poster-2025_small.pdf).
-* Ian N. presented [a talk about federated data
-  repositories and the QGreenland-Net project](https://drive.google.com/file/d/1sNAvMQg-hLpiicpnBDeSluxqIJA2EoWz/view)
-* Twila M. presented a talk about some of her work with summer schools in
-  Greenland.
+## Icelink collaborator meeting Nov. 11
+
+![](../_images/icelink_poster.jpg){fig-align="center"}
+
+
+## GSW Conference Nov. 12-13
+
+:::{.light-background}
+
+::: {.r-fit-text}
+* Plenary sesssions with translations from/to Greenlandic
+* Two parallel tracks for talks from attendees
+* Attendees and talks covered wide breadth of science in Greenland
+:::
+
+:::
+
+![Conference took place in the Katuaq culture center](https://trey-stafford.github.io/images/greenland_science_week_conf.jpg){fig-align="center"}
 
 ::: {.notes}
 The conference itself was held in the culture center in Nuuk. It was a large
@@ -165,15 +247,36 @@ conference (#attendees?) that covered a huge range of topics related to science
 in Greenland. There were many people who studied snow/ice, but also ecosystems,
 biochemistry, climate modeling, astronomy, etc.
 
-The conference took place over two days. There were two concurrent rooms with
-talks - our team attended both to ensure we heard about everything!
+Our team attended both tracks of talks to ensure we heard about everything!
 :::
+
+
+## GSW Conference Nov. 12-13
+
+:::{.light-background}
+
+::: {.r-fit-text}
+* Robyn M. presented a [poster about
+  QGreenland-Net](https://qgreenland.org/sites/default/files/2025-12/gsw-poster-2025_small.pdf).
+* Ian N. presented [a talk about federated data
+  repositories and the QGreenland-Net project](https://drive.google.com/file/d/1sNAvMQg-hLpiicpnBDeSluxqIJA2EoWz/view)
+* Twila M. presented a talk about some of her work with summer schools in
+  Greenland.
+:::
+
+:::
+
+![](https://trey-stafford.github.io/images/poster_selfie.jpg){fig-align="center"}
 
 ## Meeting at Asiaq Nov. 14
 
-Met with stakeholders from Asiaq and GINR to discuss QGreenland-Net activities
+:::{.light-background}
+
+Met with collaborators from Asiaq and GINR to discuss QGreenland-Net activities
 and priorities. We also received updates from Asiaq and GINR and talked about
 ways we could collaborate moving forward.
+
+:::
 
 :::{.notes}
 * Asiaq focuses on towns/settlements. New data updates related to Nuuk and
@@ -183,18 +286,42 @@ ways we could collaborate moving forward.
 * Updates to NunaGIS and NatureMap
 :::
 
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.asiaq.gl%2Fwp-content%2Fuploads%2F2018%2F10%2FAsiaq-Greenland-survey-w320.png&f=1&nofb=1&ipt=6f0fce0e949e91fa764f960e21065cf4bf575361923745f4f28a100535258326){fig-align="center" height="20%"}
+
 ## Qaagitsi Nov. 14
+
+:::{.light-background}
+
+Public Science Festival with interactive exhibits and handouts
+
+:::
 
 ![](https://trey-stafford.github.io/images/qaagitsi.jpg){fig-align="center"}
 
 ## Excursion Nov. 15
 
-:::: {layout-ncol=3 layout-valign="center"}
-![](https://trey-stafford.github.io/images/spool_iceberg.jpg)
+:::{.light-background}
 
-![](https://trey-stafford.github.io/images/fishing_boat.jpg)
+:::{.r-fit-text}
+Team members Trey, Robyn, Ian, and Angie went on a fishing excursion on
+Saturday. The fresh fish we caught were prepared for us afterwards!
+:::
 
-![](https://trey-stafford.github.io/images/fjord_fishing_food.jpg)
+:::
+
+:::: {.columns}
+
+:::{.column}
+![](https://trey-stafford.github.io/images/fishing_boat.jpg){width=75%}
+:::
+
+:::{.column}
+::::{.img-stack .center-images}
+![](https://trey-stafford.github.io/images/spool_iceberg.jpg){width=60%}
+![](https://trey-stafford.github.io/images/fjord_fishing_food.jpg){width=60%}
+::::
+:::
+
 ::::
 
 
@@ -207,9 +334,24 @@ meal prepared with our catch afterwards!
 
 ## Key takeaways/Common themes
 
+:::{.light-background}
+
 * [International Polar Year 5 (IPY-5)](https://ipy5.info/) (2032-2033) planning
   is underway. Calls for project endorsements expected in early 2026.
 * Concerns about US-based projects and funding ending abruptly. Importance of
   communicating "evergreen" project artifacts.
 * Difficulties with science funding are wider than just the U.S..
 * ArcGIS StoryMaps are a commonly used tool for science communication.
+
+:::
+
+
+## Thank you!
+
+:::{.light-background}
+
+* Questions?
+
+* For more, see my blog: <https://trey-stafford.github.io/blog/>!
+
+:::
