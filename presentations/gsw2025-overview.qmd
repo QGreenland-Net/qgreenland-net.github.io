@@ -40,6 +40,55 @@ author:
 * Ian Nesbitt of NCEAS attended as a data repository expert.
 
 
+## Getting to Greenland
+
+
+:::: {layout="[55, -10, 45]" layout-valign="center"}
+
+![](https://trey-stafford.github.io/images/den_to_ice.jpg){fig-align="center"}
+
+![](https://trey-stafford.github.io/images/ice_to_nuuk.jpg){fig-align="center"}
+
+::::
+
+## Arriving in Nuuk
+
+
+![](https://trey-stafford.github.io/images/landed_in_greenland.jpg){fig-align="center"}
+
+## Nuuk
+
+![](https://trey-stafford.github.io/images/kobenhavner.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/foot_on_ice.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/treywithice.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/sunset.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/stairs_in_nuuk.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/icebergs_nuuk_20251114.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/first_sea_iceberg.jpg){fig-align="center"}
+
+---
+
+![](https://trey-stafford.github.io/images/iceberg_zoom.jpg){fig-align="center"}
+
+
 ## Greenland Science Week
 
 ```{mermaid}
@@ -65,6 +114,7 @@ timeline
 * Trey also attended a few events while in Ilulissat on vacation!
 
 ![](https://trey-stafford.github.io/images/ILLU.jpg){fig-align="center"}
+
 
 ## Cryosphere side-meeting Nov. 10
 
