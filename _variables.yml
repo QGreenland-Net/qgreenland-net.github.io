@@ -14,3 +14,12 @@ people:
   alyona:
     name: "Alyona Kosobokova"
     orcid: "0009-0001-8687-7764"
+  twila:
+    name: "Twila Moon"
+    orcid: "0000-0003-0968-7008"
+  ian:
+    name: "Ian Nesbitt"
+    orcid: "0000-0001-5828-6070"
+  angie:
+    name: "Angie Garcia"
+    orcid: "0009-0009-1877-9503"
