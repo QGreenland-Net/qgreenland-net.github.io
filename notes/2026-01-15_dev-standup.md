@@ -1,6 +1,6 @@
 ---
-title: "2025-01-15: Dev standup"
-date: "2025-01-15"
+title: "2026-01-15: Dev standup"
+date: "2026-01-15"
 ---
 
 ## Participants
