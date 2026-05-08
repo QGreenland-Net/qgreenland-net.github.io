@@ -1,0 +1,90 @@
+---
+title: "Connected Data Products Hackdays Overview"
+date: "2026-05-13"
+format:
+  revealjs:
+    theme: default
+
+author:
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
+  - name: "{{< var people.robyn.name >}}"
+    orcid: "{{< var people.robyn.orcid >}}"
+  - name: "Luis López "
+    orcid: "0000-0003-4896-3263"
+---
+
+
+## Connected Data Products Hackdays
+
+* Berkeley, CA April 13-15
+* Co-hosted by [Englacial](https://englacial.org/) and [Berkeley Institute for Data
+  Science](https://bids.berkeley.edu/).
+* Focus on bringing together members of the cryospheric data science community
+  to explore connected and living data products.
+* April 13: Presentations/demos and ideas formation
+* April 14-15: Hack time!
+
+::: {.notes}
+Englacial is funeded by [Astera](https://astera.org/), which provided support
+for this event. Englacial focuses on connecting observational data to numerical
+models of ice sheets.
+
+Astera is a scientific technology company with a strong focus on AI.
+:::
+
+## The group
+
+
+![Image courtesy of
+Englacial](https://englacial.org/posts/20240428-hackdays-projects/images/hackdays-participants.jpg){fig-align="center"}
+
+::: {.notes}
+~30 participants (25 pictured) from the cryospheric data science community.
+:::
+
+## Demos/Presentations
+
+::: {.r-fit-text}
+* Open Polar Radar Tools ([xopr](https://github.com/englacial/xopr)): Python
+  package for accessing and analyzing [CReSIS](https://cresis.ku.edu/) radar
+  depth sounder data.
+* [icepyx](https://github.com/icesat2py/icepyx): Python library for searching
+  and accessing IceSat2 data.
+* [GStatSim](https://github.com/GatorGlaciology/GStatSim): Python package for
+  geostatistical interpolation methods.
+* [NISAR](https://science.nasa.gov/mission/nisar/) data at [ASF
+  DAAC](https://asf.alaska.edu/).
+* [Arcadia](https://research.arcadiascience.com/) bioscience overview and demo
+  of [The Stacks](https://thestacks.org/) scientific publishing platform.
+* [MyST](https://mystmd.org/) for scientific publishing with markdown.
+* [Source Cooperative](https://source.coop/): nonprofit publishing of scientific
+  data to cloud infrastructure.
+* [Cloud-Native Geospatial Forum](https://cloudnativegeo.org/) overview and
+  [data formats guide](https://guide.cloudnativegeo.org/)
+* [Cryocloud](https://cryointhecloud.com/): Collaborative Earth Science Platform
+  in the cloud.
+* [VirtualiZarr](https://virtualizarr.readthedocs.io/en/latest/index.html) and
+  [IceChunk](https://icechunk.io/en/stable/).
+* [ISMIP 6 Model Viewer](https://englacial.org/models.html)
+:::
+
+## Common themes
+
+::: {.r-fit-text}
+* Data archived in the cloud is not always "cloud-optimized" or
+  "AI-ready". Significant interest in data virtualization techniques (e.g,
+  [VirtualiZarr](https://virtualizarr.readthedocs.io/en/latest/index.html),
+  [IceChunk](https://icechunk.io/en/stable/))
+* Importance of living/executable documentation (e.g,. via
+  [MyST](https://mystmd.org/)).
+* Discussions about how to maintain citations for products that receive updates
+  from a rotating cast of contributors.
+* The role of AI in scientific software/product development (e.g., [Jupyter
+  AI](https://jupyter-ai.readthedocs.io/en/v3/)).
+* Reproducibility in science is more than just being open. Can AI be used as a
+  "reproducibility checker"?
+* Challenges with scaling notebooks to production
+* Challenges with co-locating and co-analyzing data that were not "designed" to
+  work together natively.
+:::
