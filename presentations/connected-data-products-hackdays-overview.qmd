@@ -69,6 +69,37 @@ Englacial](https://englacial.org/posts/20240428-hackdays-projects/images/hackday
 * [ISMIP 6 Model Viewer](https://englacial.org/models.html)
 :::
 
+## Hack projects
+
+::: {.r-fit-text}
+* [earthaccess](https://earthaccess.readthedocs.io/) v1.0 updates
+* Virtualization of datasets for efficient cloud access (e.g,. radar sounder data).
+* Analysis of velocity changes at grounding zones.
+* Analysis of radar echo sounding crossovers with IceSat2 crossovers.
+* Geostatistics/Interpolation of data with
+  [GStatSim](https://github.com/GatorGlaciology/GStatSim).
+
+Englacial posted a nice writeup of the hackdays projects here:
+
+<https://englacial.org/posts/20240428-hackdays-projects/index.html>!
+:::
+
+## earthaccess v1 hacking
+
+::: {.r-fit-text}
+* Trey, Joe Kennedy (ASF), Julia Lober (graduate student at Boise State), Matt
+  Fisher (DSE), and Jessica Scheick (U. of New Hampshire)
+* The project is working toward a v1 release, and there are various
+  milestones/breaking changes that we want to complete before v1 is done.
+* We ended up focusing on updates to the results API, and providing convenience
+  methods/properties to the `Results` class (e.g., we added the ability to
+  export to GeoDataframe and worked toward attaching query provenance to the
+  results).
+* Associated PR: <https://github.com/earthaccess-dev/earthaccess/pull/1298>
+* Lots of people expressed interest in this work, and were excited for the
+  changes. Almost all of the projects (maybe all) used earthaccess.
+:::
+
 ## Common themes
 
 ::: {.r-fit-text}
@@ -88,3 +119,6 @@ Englacial](https://englacial.org/posts/20240428-hackdays-projects/images/hackday
 * Challenges with co-locating and co-analyzing data that were not "designed" to
   work together natively.
 :::
+
+
+## Questions?
