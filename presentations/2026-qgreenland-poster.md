@@ -57,7 +57,7 @@ underway and we welcome user engagement.
 
 ## Poster
 
-Coming soon!
+![](../_images/qgreenland-poster-2026.jpg){fig-align="center"}
 
 
 ## Learn more!
