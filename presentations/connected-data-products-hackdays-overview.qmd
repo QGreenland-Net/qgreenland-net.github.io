@@ -100,6 +100,24 @@ Englacial posted a nice writeup of the hackdays projects here:
   changes. Almost all of the projects (maybe all) used earthaccess.
 :::
 
+## GStatSim: New Applications for Large Radar Datasets
+
+::: {.r-fit-text}
+* **Team:** Robyn Marowitz, Eliza Dawson (NOAA C&GC Postdoc Fellow, Georgia Tech),
+  Joseph Rotondo (UW grad student), Lindsay Stark (Boise State grad student), Emmy Muniz (Stanford undergraduate student)
+* Expanded the [GStatSim](https://gatorglaciology.github.io/gstatsimbook/intro.html)
+  Jupyter Book documentation with two new real-world application notebooks:
+  * **HiCARS radar sounder** — end-to-end workflow: downloading 860 granules from
+    NSIDC via [`earthaccess`](https://earthaccess.readthedocs.io/), parsing flight-line
+    text files into a single [GeoParquet](https://geoparquet.org/) (9.3M points,
+    EPSG:3031), and fitting variogram models for kriging and geostatistical simulation
+  * **Arctic pole hole** — filling the gap in satellite sea-ice coverage near the
+    pole using geostatistical interpolation of sea-ice albedo
+* Together these notebooks demonstrate real-world approaches to connecting datasets
+  through an open-source package to produce a new data product
+* Repo: <https://github.com/elizadawson/gstatsim_largedatasets>
+:::
+
 ## Common themes
 
 ::: {.r-fit-text}
