@@ -1,0 +1,142 @@
+---
+title: "Connected Data Products Hackdays Overview"
+date: "2026-05-13"
+format:
+  revealjs:
+    theme: default
+
+author:
+  - name: "{{< var people.trey.name >}}"
+    orcid: "{{< var people.trey.orcid >}}"
+  - name: "{{< var people.robyn.name >}}"
+    orcid: "{{< var people.robyn.orcid >}}"
+  - name: "Luis López "
+    orcid: "0000-0003-4896-3263"
+---
+
+
+## Connected Data Products Hackdays
+
+* Berkeley, CA April 13-15
+* Co-hosted by [Englacial](https://englacial.org/) and [Berkeley Institute for Data
+  Science](https://bids.berkeley.edu/).
+* Focus on bringing together members of the cryospheric data science community
+  to explore connected and living data products.
+* April 13: Presentations/demos and ideas formation
+* April 14-15: Hack time!
+
+::: {.notes}
+Englacial is funeded by [Astera](https://astera.org/), which provided support
+for this event. Englacial focuses on connecting observational data to numerical
+models of ice sheets.
+
+Astera is a scientific technology company with a strong focus on AI.
+:::
+
+## The group
+
+
+![Image courtesy of
+Englacial](https://englacial.org/posts/20240428-hackdays-projects/images/hackdays-participants.jpg){fig-align="center"}
+
+::: {.notes}
+~30 participants (25 pictured) from the cryospheric data science community.
+:::
+
+## Demos/Presentations
+
+::: {.r-fit-text}
+* Open Polar Radar Tools ([xopr](https://github.com/englacial/xopr)): Python
+  package for accessing and analyzing [CReSIS](https://cresis.ku.edu/) radar
+  depth sounder data.
+* [icepyx](https://github.com/icesat2py/icepyx): Python library for searching
+  and accessing IceSat2 data.
+* [GStatSim](https://github.com/GatorGlaciology/GStatSim): Python package for
+  geostatistical interpolation methods.
+* [NISAR](https://science.nasa.gov/mission/nisar/) data at [ASF
+  DAAC](https://asf.alaska.edu/).
+* [Arcadia](https://research.arcadiascience.com/) bioscience overview and demo
+  of [The Stacks](https://thestacks.org/) scientific publishing platform.
+* [MyST](https://mystmd.org/) for scientific publishing with markdown.
+* [Source Cooperative](https://source.coop/): nonprofit publishing of scientific
+  data to cloud infrastructure.
+* [Cloud-Native Geospatial Forum](https://cloudnativegeo.org/) overview and
+  [data formats guide](https://guide.cloudnativegeo.org/)
+* [Cryocloud](https://cryointhecloud.com/): Collaborative Earth Science Platform
+  in the cloud.
+* [VirtualiZarr](https://virtualizarr.readthedocs.io/en/latest/index.html) and
+  [IceChunk](https://icechunk.io/en/stable/).
+* [ISMIP 6 Model Viewer](https://englacial.org/models.html)
+:::
+
+## Hack projects
+
+::: {.r-fit-text}
+* [earthaccess](https://earthaccess.readthedocs.io/) v1.0 updates
+* Virtualization of datasets for efficient cloud access (e.g,. radar sounder data).
+* Analysis of velocity changes at grounding zones.
+* Analysis of radar echo sounding crossovers with IceSat2 crossovers.
+* Geostatistics/Interpolation of data with
+  [GStatSim](https://github.com/GatorGlaciology/GStatSim).
+
+Englacial posted a nice writeup of the hackdays projects here:
+
+<https://englacial.org/posts/20240428-hackdays-projects/index.html>!
+:::
+
+## earthaccess v1 hacking
+
+::: {.r-fit-text}
+* Trey, Joe Kennedy (ASF), Julia Lober (graduate student at Boise State), Matt
+  Fisher (DSE), and Jessica Scheick (U. of New Hampshire)
+* The project is working toward a v1 release, and there are various
+  milestones/breaking changes that we want to complete before v1 is done.
+* We ended up focusing on updates to the results API, and providing convenience
+  methods/properties to the `Results` class (e.g., we added the ability to
+  export to GeoDataframe and worked toward attaching query provenance to the
+  results).
+* Associated PR: <https://github.com/earthaccess-dev/earthaccess/pull/1298>
+* Lots of people expressed interest in this work, and were excited for the
+  changes. Almost all of the projects (maybe all) used earthaccess.
+:::
+
+## GStatSim: New Applications for Large Radar Datasets
+
+::: {.r-fit-text}
+* **Team:** Robyn Marowitz, Eliza Dawson (NOAA C&GC Postdoc Fellow, Georgia Tech),
+  Joseph Rotondo (UW grad student), Lindsay Stark (Boise State grad student), Emmy Muniz (Stanford undergraduate student)
+* Expanded the [GStatSim](https://gatorglaciology.github.io/gstatsimbook/intro.html)
+  Jupyter Book documentation with two new real-world application notebooks:
+  * **HiCARS radar sounder** — end-to-end workflow: downloading 860 granules from
+    NSIDC via [`earthaccess`](https://earthaccess.readthedocs.io/), parsing flight-line
+    text files into a single [GeoParquet](https://geoparquet.org/) (9.3M points,
+    EPSG:3031), and fitting variogram models for kriging and geostatistical simulation
+  * **Arctic pole hole** — filling the gap in satellite sea-ice coverage near the
+    pole using geostatistical interpolation of sea-ice albedo
+* Together these notebooks demonstrate real-world approaches to connecting datasets
+  through an open-source package to produce a new data product
+* Repo: <https://github.com/elizadawson/gstatsim_largedatasets>
+:::
+
+## Common themes
+
+::: {.r-fit-text}
+* Data archived in the cloud is not always "cloud-optimized" or
+  "AI-ready". Significant interest in data virtualization techniques (e.g,
+  [VirtualiZarr](https://virtualizarr.readthedocs.io/en/latest/index.html),
+  [IceChunk](https://icechunk.io/en/stable/))
+* Importance of living/executable documentation (e.g,. via
+  [MyST](https://mystmd.org/)).
+* Discussions about how to maintain citations for products that receive updates
+  from a rotating cast of contributors.
+* The role of AI in scientific software/product development (e.g., [Jupyter
+  AI](https://jupyter-ai.readthedocs.io/en/v3/)).
+* Reproducibility in science is more than just being open. Can AI be used as a
+  "reproducibility checker"?
+* Challenges with scaling notebooks to production
+* Challenges with co-locating and co-analyzing data that were not "designed" to
+  work together natively.
+:::
+
+
+## Questions?
